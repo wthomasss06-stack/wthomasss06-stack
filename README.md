@@ -19,7 +19,7 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 
 - 🔭 Je travaille actuellement sur **MonMarket CI** - Marketplace E-commerce multi-vendeurs
 - 🌱 J'apprends constamment **React avancé, Django REST Framework**
-- 👨‍💻 Tous mes projets sont disponibles sur [mon portfolio](https://wthomasss06-stack.github.io/mon-premier-projet/)
+- 👨‍💻 Tous mes projets sont disponibles sur [mon portfolio](https://wthomasss06-stack.github.io/wthomasss06-stack/)
 - 💬 Demandez-moi sur **Python, Flask, Django, React, MySQL, JavaScript**
 - 📫 Comment me contacter : **aka.mbollo@uvci.edu.ci**
 - 📍 Basé à **Abidjan, Côte d'Ivoire**
@@ -172,7 +172,7 @@ En production (100%)
   <a href="mailto:aka.mbollo@uvci.edu.ci">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <a href="https://wthomasss06-stack.github.io/mon-premier-projet/" target="_blank">
+  <a href="https://wthomasss06-stack.github.io/wthomasss06-stack/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-10b981?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/>
   </a>
 </p>
