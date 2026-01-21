@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Elvis M'BOLLO - Portfolio Développeur Web</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Découvrez mes projets web : MonMarket CI, TerraSafe, applications de gestion. Portfolio de développeur web Full-Stack.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-text">&lt;PROJETS!/&gt;</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-message">Chargement...</p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="rocketBtn">
+        <i class="fas fa-rocket"></i>
+    </button>
+
+    <!-- Navbar Verticale -->
+    <nav class="navbar-vertical">
+        <div class="logo">AKAFOLIO!</div>
+        
+        <ul class="nav-links-vertical">
+            <li>
+                <a href="index.html" title="Accueil">
+                    <span class="material-symbols-outlined">home</span>
+                </a>
+            </li>
+            <li>
+                <a href="services.html" title="Services">
+                    <span class="material-symbols-outlined">work</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html" title="À Propos">
+                    <span class="material-symbols-outlined">person</span>
+                </a>
+            </li>
+            <li>
+                <a href="skills.html" title="Compétences">
+                    <span class="material-symbols-outlined">bolt</span>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html" class="active" title="Projets">
+                    <span class="material-symbols-outlined">rocket_launch</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" title="Contact">
+                    <span class="material-symbols-outlined">mail</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="nav-actions-vertical">
+            <button id="theme-mode-toggle" class="theme-btn-vertical">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <button id="color-theme-toggle" class="theme-btn-vertical">
+                <span class="material-symbols-outlined">palette</span>
+            </button>
+            <a href="contact.html" class="btn-cta-vertical">
+                <span class="material-symbols-outlined">send</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <span class="section-tag">Portfolio</span>
+            <div class="section-title-wrapper">
+                <h2 class="section-title">&lt;Projets <span class="highlight">Réalisés/&gt;</span></h2>
+                <button class="projects-info-btn" onclick="toggleProjectsInfo()" title="Informations sur les projets">
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+            <p class="section-description">Applications web fonctionnelles et projets en production</p>
+        </div>
+        
+        <!-- Boîte d'information -->
+        <div id="projectsInfoBox" class="projects-info-box hidden">
+            <p>
+                <strong>📌 À propos de ces projets :</strong> Cette section présente mes réalisations techniques,
+                allant de projets en production jusqu'aux démos fonctionnelles illustrant ma capacité
+                à structurer des applications web complètes.
+            </p>
+        </div>
+
+        <!-- FILTRES DE PROJETS -->
+        <div class="projects-filters">
+            <button class="filter-btn active" data-filter="tous">
+                <span class="material-symbols-outlined">apps</span>
+                <span>Tous</span>
+                <span class="filter-count">7</span>
+            </button>
+            <button class="filter-btn" data-filter="en-ligne">
+                <span class="material-symbols-outlined">public</span>
+                <span>En ligne</span>
+                <span class="filter-count">2</span>
+            </button>
+            <button class="filter-btn" data-filter="demo">
+                <span class="material-symbols-outlined">visibility</span>
+                <span>Démo</span>
+                <span class="filter-count">4</span>
+            </button>
+            <button class="filter-btn" data-filter="en-cours">
+                <span class="material-symbols-outlined">pending</span>
+                <span>En cours</span>
+                <span class="filter-count">1</span>
+            </button>
+        </div>
+        
+        <div class="projects-grid" id="projectsGrid">
+            
+            <!-- PROJET 1 : MonMarket CI (EN LIGNE) -->
+            <div class="project-card project-card-premium" data-category="en-ligne">
+                <div class="premium-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>En production</span>
+                </div>
+                <div class="project-image-screenshot">
+                    <img src="assets/images/projects/monmarket-preview.jpg" 
+                         alt="Aperçu MonMarket CI"
+                         loading="lazy">
+                    <div class="project-overlay">
+                        <div class="live-badge">
+                            <i class="fas fa-circle"></i> EN LIGNE
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        MonMarket CI – Marketplace E-commerce
+                        <i class="fas fa-external-link-alt" style="font-size: 0.7em; margin-left: 8px; color: var(--primary);"></i>
+                    </h3>
+                    <p class="project-description">
+                        Marketplace multi-vendeurs conçue pour répondre aux problèmes de fiabilité, de visibilité et de gestion des ventes dans le e-commerce local ivoirien.
+                    </p>
+                    
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>Multi-vendeurs</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Panier temps réel</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Paiement sécurisé</span>
+                        </div>
+                    </div>
+
+                    <div class="project-progress">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 60%;">Avancement : 60%</div>
+                        </div>
+                    </div>
+
+                    <div class="project-tech">
+                        <span class="tech-tag tech-tag-premium">React</span>
+                        <span class="tech-tag tech-tag-premium">Python/Django</span>
+                        <span class="tech-tag tech-tag-premium">Bootstrap 5</span>
+                        <span class="tech-tag tech-tag-premium">Netlify + PythonAnywhere</span>
+                    </div>
+                    
+                    <div class="project-links-premium">
+                        <a href="https://ecommerce-aka.netlify.app/" target="_blank" class="project-link-primary">
+                            <i class="fas fa-globe"></i>
+                            Voir le site
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 2 : TerraSafe (EN LIGNE) -->
+            <div class="project-card project-card-premium" data-category="en-ligne">
+                <div class="premium-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>En production</span>
+                </div>
+                <div class="project-image-screenshot">
+                    <img src="assets/images/projects/terrasafe-preview.jpg" 
+                         alt="Aperçu TerraSafe"
+                         loading="lazy">
+                    <div class="project-overlay">
+                        <div class="live-badge">
+                            <i class="fas fa-circle"></i> EN LIGNE
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        TerraSafe – Marketplace Foncière
+                        <i class="fas fa-external-link-alt" style="font-size: 0.7em; margin-left: 8px; color: var(--primary);"></i>
+                    </h3>
+                    <p class="project-description">
+                        Plateforme foncière visant à réduire les risques d'arnaques liées à la vente de terrains. Backend sécurisé avec recherche avancée.
+                    </p>
+
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL + Flask</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-lock"></i>
+                            <span>Auth sécurisée</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-search"></i>
+                            <span>Recherche avancée</span>
+                        </div>
+                    </div>
+
+                    <div class="project-progress">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;">Avancement : 85%</div>
+                        </div>
+                    </div>
+
+                    <div class="project-tech">
+                        <span class="tech-tag tech-tag-premium">Python/Flask</span>
+                        <span class="tech-tag tech-tag-premium">MySQL</span>
+                        <span class="tech-tag tech-tag-premium">JavaScript</span>
+                        <span class="tech-tag tech-tag-premium">Bootstrap 5</span>
+                    </div>
+                    <div class="project-links-premium">
+                        <a href="https://wthomassss06.pythonanywhere.com" target="_blank" class="project-link-primary">
+                            <i class="fas fa-globe"></i>
+                            Voir le site
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 3 : chap-chapMAP (DEMO) -->
+            <div class="project-card" data-category="demo">
+                <div class="project-image-screenshot">
+                    <img src="assets/images/projects/chapchapmap-preview.jpg" 
+                         alt="Aperçu chap-chapMAP"
+                         loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        chap-chapMAP – Navigation Intelligente
+                        <span class="badge badge-completed">Démo fonctionnelle</span>
+                    </h3>
+                    <p class="project-description">
+                        Application de cartographie intelligente permettant de localiser un utilisateur en temps réel et de calculer des itinéraires optimisés.
+                    </p>
+
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>API Leaflet</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-route"></i>
+                            <span>Calcul itinéraires</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-location-arrow"></i>
+                            <span>GPS temps réel</span>
+                        </div>
+                    </div>
+
+                    <div class="project-progress">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;">Complété</div>
+                        </div>
+                    </div>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Leaflet.js</span>
+                        <span class="tech-tag">OSRM API</span>
+                        <span class="tech-tag">Geolocation API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 4 : ElvisMarket (DEMO) -->
+            <div class="project-card" data-category="demo">
+                <div class="project-image-screenshot">
+                    <img src="assets/images/projects/elvismarket-preview.jpg" 
+                         alt="Aperçu plateforme ElvisMarket"
+                         loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        ElvisMarket – Interface E-commerce
+                        <span class="badge badge-completed">Démo fonctionnelle</span>
+                    </h3>
+                    <p class="project-description">
+                        Interface e-commerce développée pour expérimenter la gestion d'état, le panier dynamique et l'optimisation de l'UX.
+                    </p>
+
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Panier dynamique</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-filter"></i>
+                            <span>Filtres avancés</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+
+                    <div class="project-progress">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;">Complété</div>
+                        </div>
+                    </div>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML + JS vanilla</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">LocalStorage</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 5 : MonCashJour (DEMO) -->
+            <div class="project-card" data-category="demo">
+                <div class="project-image-screenshot">
+                    <img src="assets/images/projects/moncashjour-preview.jpg" 
+                         alt="Aperçu application MonCashJour"
+                         loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        MonCashJour – Gestion de Ventes
+                        <span class="badge badge-completed">Démo fonctionnelle</span>
+                    </h3>
+                    <p class="project-description">
+                        Application de gestion de ventes quotidiennes destinée aux petits commerçants, avec visualisation des performances et export des données.
+                    </p>
+
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analytiques</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-file-export"></i>
+                            <span>Export CSV</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-history"></i>
+                            <span>Historique</span>
+                        </div>
+                    </div>
+
+                    <div class="project-progress">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;">Complété</div>
+                        </div>
+                    </div>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML + JS vanilla</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Chart.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 6 : LivreurTrack Pro (DEMO) -->
+            <div class="project-card" data-category="demo">
+                <div class="project-image-screenshot">
+                    <img src="assets/images/projects/livreurtrack-preview.jpg" 
+                         alt="Aperçu système LivreurTrack Pro"
+                         loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        LivreurTrack Pro – Système de Suivi Logistique
+                        <span class="badge badge-completed">Démo fonctionnelle</span>
+                    </h3>
+                    <p class="project-description">
+                       Système de suivi logistique simulant un workflow réel de livraison, avec validation par photo et suivi d'étapes.
+                    </p>
+
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-tasks"></i>
+                            <span>Workflow 5 étapes</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-camera"></i>
+                            <span>Validation photo</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-history"></i>
+                            <span>Historique complet</span>
+                        </div>
+                    </div>
+
+                    <div class="project-progress">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;">Complété</div>
+                        </div>
+                    </div>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap 5</span>
+                        <span class="tech-tag">LocalStorage</span>
+                        <span class="tech-tag">Camera API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 7 : LinkedIn Banner Pro (EN COURS) -->
+            <div class="project-card" data-category="en-cours">
+                <div class="project-image-screenshot">
+                    <img src="assets/images/projects/linkedin-banner-preview.jpg"
+                         alt="Aperçu LinkedIn Banner Pro"
+                         loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        LinkedIn Banner Pro – Générateur de bannières
+                        <span class="badge badge-progress">En développement</span>
+                    </h3>
+                    <p class="project-description">
+                        Outil SaaS en cours de développement permettant de générer des bannières LinkedIn professionnelles via un éditeur visuel.
+                    </p>
+
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Éditeur visuel</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-eye"></i>
+                            <span>Preview temps réel</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-download"></i>
+                            <span>Export PNG</span>
+                        </div>
+                    </div>
+
+                    <div class="project-progress">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 30%;">En cours : 30%</div>
+                        </div>
+                    </div>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Canvas API</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Message quand aucun projet -->
+        <div id="noProjectsMessage" class="no-projects-message hidden">
+            <span class="material-symbols-outlined">search_off</span>
+            <p>Aucun projet dans cette catégorie</p>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta-section">
+        <div class="cta-container">
+            <h2>Un projet en tête ?</h2>
+            <p>Transformons votre idée en réalité. Contactez-moi pour en discuter.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Démarrer un projet
+                </a>
+                <a href="services.html" class="btn-secondary">
+                    <i class="fas fa-briefcase"></i>
+                    Voir mes services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size: 1rem; margin-bottom: 1.5rem;">
+            © 2026 Elvis M'BOLLO | Développeur Web Full-Stack
+        </p>
+        
+        <div class="social-links" style="display: flex; gap: 15px; justify-content: center; margin-bottom: 1.5rem;">
+            <a href="https://github.com/wthomasss06-stack" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aka-m-bollo-60a1b1340" target="_blank" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/2250142507750" target="_blank" class="social-link">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Fait avec <span style="color: var(--primary);">❤</span> en Côte d'Ivoire
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

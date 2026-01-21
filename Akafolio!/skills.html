@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences | Elvis M'BOLLO - Technologies & Outils</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Mes compétences en développement web : Python, Django, Flask, React, JavaScript, MySQL, Git. Technologies frontend et backend.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-text">&lt;SKILLS!/&gt;</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-message">Chargement...</p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="rocketBtn">
+        <i class="fas fa-rocket"></i>
+    </button>
+
+    <!-- Navbar Verticale -->
+    <nav class="navbar-vertical">
+        <div class="logo">AKAFOLIO!</div>
+        
+        <ul class="nav-links-vertical">
+            <li>
+                <a href="index.html" title="Accueil">
+                    <span class="material-symbols-outlined">home</span>
+                </a>
+            </li>
+            <li>
+                <a href="services.html" title="Services">
+                    <span class="material-symbols-outlined">work</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html" title="À Propos">
+                    <span class="material-symbols-outlined">person</span>
+                </a>
+            </li>
+            <li>
+                <a href="skills.html" class="active" title="Compétences">
+                    <span class="material-symbols-outlined">bolt</span>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html" title="Projets">
+                    <span class="material-symbols-outlined">rocket_launch</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" title="Contact">
+                    <span class="material-symbols-outlined">mail</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="nav-actions-vertical">
+            <button id="theme-mode-toggle" class="theme-btn-vertical">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <button id="color-theme-toggle" class="theme-btn-vertical">
+                <span class="material-symbols-outlined">palette</span>
+            </button>
+            <a href="contact.html" class="btn-cta-vertical">
+                <span class="material-symbols-outlined">send</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header">
+            <span class="section-tag">Compétences</span>
+            <h2 class="section-title">&lt;Skills & <span class="highlight">Experience/&gt;</span></h2>
+            <p class="section-description">Technologies et outils que je maîtrise</p>
+            <p class="skills-quote">"Le web est comme une toile, et le code est ma peinture. Avec je crée mon chef-d'œuvre."</p>
+        </div>
+
+        <!-- Barre 1 : Frontend -->
+        <div class="skill-category-wrapper">
+            <h3 class="skill-category-title">
+                <i class="fas fa-laptop-code"></i> Frontend
+            </h3>
+            <div class="skill-category">
+                <div class="skill-logos">
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <span>React</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind">
+                        <span>Tailwind</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barre 2 : Backend -->
+        <div class="skill-category-wrapper">
+            <h3 class="skill-category-title">
+                <i class="fas fa-server"></i> Backend
+            </h3>
+            <div class="skill-category">
+                <div class="skill-logos">
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: brightness(0) invert(1);">
+                        <span>Flask</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" style="filter: brightness(0) invert(1);">
+                        <span>Django</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barre 3 : Design & Tools -->
+        <div class="skill-category-wrapper">
+            <h3 class="skill-category-title">
+                <i class="fas fa-tools"></i> Design & Outils
+            </h3>
+            <div class="skill-category">
+                <div class="skill-logos">
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="ChatGPT" style="filter: brightness(0) invert(1); width: 50px; height: 50px;">
+                        <span>ChatGPT</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Gemini" style="width: 50px; height: 50px;">
+                        <span>Gemini</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <svg viewBox="0 0 200 200" style="width: 50px; height: 50px;">
+                            <rect width="200" height="200" rx="30" fill="url(#claudeGradient)"/>
+                            <defs>
+                                <linearGradient id="claudeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#D97757;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#C65D3B;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <text x="100" y="140" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="white" text-anchor="middle">C</text>
+                        </svg>
+                        <span>Claude AI</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://www.pythonanywhere.com/static/anywhere/images/PA-logo.svg" alt="PythonAnywhere" style="width: 50px; height: 50px;">
+                        <span>PythonAnywhere</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barre 4 : Autres Compétences -->
+        <div class="skill-category-wrapper">
+            <h3 class="skill-category-title">
+                <i class="fas fa-plus-circle"></i> Autres Compétences
+            </h3>
+            <div class="skill-category">
+                <div class="skill-logos">
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows">
+                        <span>Windows</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android">
+                        <span>Android</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <div style="width: 50px; height: 50px; background: #2B579A; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white; font-size: 22px; font-weight: bold;">W</span>
+                        </div>
+                        <span>Word</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <div style="width: 50px; height: 50px; background: #217346; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white; font-size: 22px; font-weight: bold;">X</span>
+                        </div>
+                        <span>Excel</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <div style="width: 50px; height: 50px; background: #D24726; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white; font-size: 22px; font-weight: bold;">P</span>
+                        </div>
+                        <span>PowerPoint</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <div style="width: 50px; height: 50px; background: #31752F; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-project-diagram" style="color: white; font-size: 22px;"></i>
+                        </div>
+                        <span>MS Project</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook">
+                        <span>Facebook</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #833AB4, #FD1D1D); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-user-friends" style="color: white; font-size: 22px;"></i>
+                        </div>
+                        <span>Community</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-tshirt" style="color: white; font-size: 22px;"></i>
+                        </div>
+                        <span>Design Jean</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #FA8BFF, #2BD2FF); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-palette" style="color: white; font-size: 22px;"></i>
+                        </div>
+                        <span>Peinture</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-wrench" style="color: white; font-size: 22px;"></i>
+                        </div>
+                        <span>Maintenance</span>
+                    </div>
+                    <div class="skill-logo-item">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-headset" style="color: white; font-size: 22px;"></i>
+                        </div>
+                        <span>Support Tech</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta-section">
+        <div class="cta-container">
+            <h2>Besoin de ces compétences ?</h2>
+            <p>Mettons mes compétences au service de votre projet. Discutons-en !</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Me contacter
+                </a>
+                <a href="projects.html" class="btn-secondary">
+                    <i class="fas fa-eye"></i>
+                    Voir mes projets
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size: 1rem; margin-bottom: 1.5rem;">
+            © 2026 Elvis M'BOLLO | Développeur Web Full-Stack
+        </p>
+        
+        <div class="social-links" style="display: flex; gap: 15px; justify-content: center; margin-bottom: 1.5rem;">
+            <a href="https://github.com/wthomasss06-stack" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aka-m-bollo-60a1b1340" target="_blank" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/2250142507750" target="_blank" class="social-link">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Fait avec <span style="color: var(--primary);">❤</span> en Côte d'Ivoire
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
