@@ -18,7 +18,7 @@
 Développeur web formé en **Réseau et Sécurité Informatique**, je conçois et mets en œuvre des applications web fonctionnelles en combinant front-end moderne et back-end Python. Rigoureux, créatif et orienté solution, je dispose d'une expérience terrain en maintenance informatique et support technique.
 
 - 🔭 Je travaille actuellement sur **MonMarket CI** - Marketplace E-commerce multi-vendeurs
-- 🌱 J'apprends constamment **React avancé, Django REST Framework, Docker**
+- 🌱 J'apprends constamment **React avancé, Django REST Framework**
 - 👨‍💻 Tous mes projets sont disponibles sur [mon portfolio](https://wthomasss06-stack.github.io/mon-premier-projet/)
 - 💬 Demandez-moi sur **Python, Flask, Django, React, MySQL, JavaScript**
 - 📫 Comment me contacter : **aka.mbollo@uvci.edu.ci**
@@ -113,6 +113,13 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 - Marketplace foncière sécurisée contre les arnaques
 - Technologies : Flask, MySQL, JavaScript, Bootstrap 5
 - [Voir le site](https://wthomassss06.pythonanywhere.com)
+
+### ⚡ TechFlow – Site Vitrine Professionnel
+
+En production (100%)
+- Site vitrine moderne pour la présentation de services technologiques
+- Technologies : Django, HTML/Tailwind CSS, JavaScript
+- [Voir le site](https://aka0006.pythonanywhere.com)
 
 ### 🗺️ chap-chapMAP - Navigation Intelligente
 **Démo fonctionnelle**
