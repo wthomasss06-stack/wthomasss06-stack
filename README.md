@@ -106,7 +106,7 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 **En production (60%)**
 - Marketplace multi-vendeurs pour le e-commerce ivoirien
 - Technologies : React, Django, Bootstrap 5, MySQL
-- [Voir le site](https://ecommerce-project-aka.netlify.app/)
+- [Voir le site](https://ecommerce-aka.netlify.app/)
 
 ### 🏡 TerraSafe - Plateforme Foncière
 **En production (85%)**
