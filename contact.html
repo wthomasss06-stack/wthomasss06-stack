@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Elvis M'BOLLO - Me Contacter</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Contactez Elvis M'BOLLO pour vos projets web. Téléphone, email, WhatsApp. Téléchargez mon CV. Réponse garantie sous 24h.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-text">&lt;CONTACT!/&gt;</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-message">Chargement...</p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="rocketBtn">
+        <i class="fas fa-rocket"></i>
+    </button>
+
+    <!-- Navbar Verticale -->
+    <nav class="navbar-vertical">
+        <div class="logo">AKAFOLIO!</div>
+        
+        <ul class="nav-links-vertical">
+            <li>
+                <a href="index.html" title="Accueil">
+                    <span class="material-symbols-outlined">home</span>
+                </a>
+            </li>
+            <li>
+                <a href="services.html" title="Services">
+                    <span class="material-symbols-outlined">work</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html" title="À Propos">
+                    <span class="material-symbols-outlined">person</span>
+                </a>
+            </li>
+            <li>
+                <a href="skills.html" title="Compétences">
+                    <span class="material-symbols-outlined">bolt</span>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html" title="Projets">
+                    <span class="material-symbols-outlined">rocket_launch</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" class="active" title="Contact">
+                    <span class="material-symbols-outlined">mail</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="nav-actions-vertical">
+            <button id="theme-mode-toggle" class="theme-btn-vertical">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <button id="color-theme-toggle" class="theme-btn-vertical">
+                <span class="material-symbols-outlined">palette</span>
+            </button>
+            <a href="contact.html" class="btn-cta-vertical">
+                <span class="material-symbols-outlined">send</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header">
+            <span class="section-tag">Contact</span>
+            <h2 class="section-title">&lt;Discutons de <span class="highlight">votre projet/&gt;</span></h2>
+            <p class="section-description">
+                Réponse garantie sous 24h • Disponible pour opportunités
+            </p>
+        </div>
+
+        <!-- GRILLE : FORMULAIRE + INFOS -->
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; max-width: 1400px; margin: 0 auto; align-items: start;">
+            
+            <!-- COLONNE 1 : FORMULAIRE -->
+            <div>
+                <form id="contactForm" style="background: var(--glass-bg); padding: 40px; border-radius: 25px; border: 1px solid var(--glass-border);">
+                    <!-- Status du formulaire -->
+                    <div id="formStatus" style="display: none; padding: 15px; border-radius: 12px; margin-bottom: 20px;"></div>
+
+                    <!-- Nom -->
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-light); font-weight: 600;">
+                            <i class="fas fa-user" style="margin-right: 8px; color: var(--primary);"></i>
+                            Nom complet *
+                        </label>
+                        <input type="text" id="name" required
+                            style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: var(--text-light); font-size: 1rem;"
+                            placeholder="Ex: Jean Kouassi">
+                        <small id="nameError" style="color: #ef4444; display: none; margin-top: 5px;"></small>
+                    </div>
+
+                    <!-- Email -->
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-light); font-weight: 600;">
+                            <i class="fas fa-envelope" style="margin-right: 8px; color: var(--primary);"></i>
+                            Email *
+                        </label>
+                        <input type="email" id="email" required
+                            style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: var(--text-light); font-size: 1rem;"
+                            placeholder="jean.kouassi@exemple.com">
+                        <small id="emailError" style="color: #ef4444; display: none; margin-top: 5px;"></small>
+                    </div>
+
+                    <!-- Type de projet -->
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-light); font-weight: 600;">
+                            <i class="fas fa-briefcase" style="margin-right: 8px; color: var(--primary);"></i>
+                            Type de projet *
+                        </label>
+                        <select id="projectType" required
+                            style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: var(--text-light); font-size: 1rem;">
+                            <option value="">Sélectionnez...</option>
+                            <option value="site-vitrine">Site Vitrine</option>
+                            <option value="e-commerce">E-commerce</option>
+                            <option value="application-web">Application Web</option>
+                            <option value="api">API / Backend</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="recrutement">Candidature spontanée</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div style="margin-bottom: 30px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-light); font-weight: 600;">
+                            <i class="fas fa-comment-dots" style="margin-right: 8px; color: var(--primary);"></i>
+                            Message *
+                        </label>
+                        <textarea id="message" required rows="5"
+                            style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: var(--text-light); font-size: 1rem; resize: vertical;"
+                            placeholder="Décrivez brièvement votre besoin..."></textarea>
+                        <small id="messageError" style="color: #ef4444; display: none; margin-top: 5px;"></small>
+                    </div>
+
+                    <!-- Bouton -->
+                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 16px; font-size: 1.1rem;">
+                        <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>
+                        <span id="submitText">Envoyer le message</span>
+                        <i class="fas fa-spinner fa-spin" id="submitLoader" style="display: none; margin-left: 10px;"></i>
+                    </button>
+
+                    <p style="text-align: center; margin-top: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="margin-right: 5px;"></i>
+                        Vos données sont sécurisées
+                    </p>
+                </form>
+            </div>
+
+            <!-- COLONNE 2 : INFOS + CV -->
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+                
+                <!-- Coordonnées -->
+                <div style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 30px;">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 25px; color: var(--text-light);">
+                        <i class="fas fa-address-card" style="margin-right: 10px; color: var(--primary);"></i>
+                        Mes coordonnées
+                    </h3>
+
+                    <div class="contact-info" style="display: flex; flex-direction: column; gap: 20px;">
+                        <!-- Téléphone -->
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-phone" style="color: white; font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-bottom: 3px; color: var(--text-muted);">Téléphone</h4>
+                                <a href="tel:+2250142507750" style="color: var(--text-light); text-decoration: none; font-weight: 600;">+225 01 42 50 77 50</a>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-envelope" style="color: white; font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-bottom: 3px; color: var(--text-muted);">Email</h4>
+                                <a href="mailto:aka.mbollo@uvci.edu.ci" style="color: var(--text-light); text-decoration: none; font-weight: 600; font-size: 0.9rem;">aka.mbollo@uvci.edu.ci</a>
+                            </div>
+                        </div>
+
+                        <!-- Localisation -->
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-map-marker-alt" style="color: white; font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-bottom: 3px; color: var(--text-muted);">Localisation</h4>
+                                <p style="color: var(--text-light); margin: 0; font-weight: 600;">Côte d'Ivoire</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CV Download -->
+                <div id="cv" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 30px; text-align: center;">
+                    <div class="qr-code" style="width: 180px; height: 180px; background: white; border-radius: 15px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); position: relative;">
+                        <img src="assets/images/qrcodeCV.png" alt="QR Code CV" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">Télécharger mon CV</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.9rem;">Scannez le QR code ou cliquez ci-dessous</p>
+                    <a href="assets/CV_MBOLLO_AKA_ELVIS.pdf" class="btn-download" download style="background: var(--primary); color: white; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease; font-size: 0.95rem;">
+                        <i class="fas fa-download"></i>
+                        Télécharger CV
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size: 1rem; margin-bottom: 1.5rem;">
+            © 2026 Elvis M'BOLLO | Développeur Web Full-Stack
+        </p>
+        
+        <div class="social-links" style="display: flex; gap: 15px; justify-content: center; margin-bottom: 1.5rem;">
+            <a href="https://github.com/wthomasss06-stack" target="_blank" class="social-link" style="width: 50px; height: 50px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--text-light); text-decoration: none; transition: all 0.3s ease;">
+                <i class="fab fa-github" style="font-size: 1.3rem;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aka-m-bollo-60a1b1340" target="_blank" class="social-link" style="width: 50px; height: 50px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--text-light); text-decoration: none; transition: all 0.3s ease;">
+                <i class="fab fa-linkedin-in" style="font-size: 1.3rem;"></i>
+            </a>
+            <a href="https://wa.me/2250142507750" target="_blank" class="social-link" style="width: 50px; height: 50px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--text-light); text-decoration: none; transition: all 0.3s ease;">
+                <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i>
+            </a>
+        </div>
+        
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Fait avec <span style="color: var(--primary);">❤</span> en Côte d'Ivoire
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
