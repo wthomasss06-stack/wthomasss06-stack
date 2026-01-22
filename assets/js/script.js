@@ -12,6 +12,7 @@ let currentColorTheme = 0;
 const themeModes = [
     { name: 'Mode Sombre', class: '', icon: 'dark_mode', color: '#64748b' },
     { name: 'Glass Clair', class: 'glass-mode', icon: 'water_drop', color: '#3b82f6' },
+    { name: 'Marron Chaleureux', class: 'glass-marron', icon: 'palette', color: '#d97706' }
 ];
 
 const colorThemes = [
@@ -24,6 +25,9 @@ const colorThemes = [
 // ============================================================
 
 window.addEventListener('load', () => {
+    // 💾 Charger les préférences de thème IMMÉDIATEMENT
+    loadThemePreferences();
+    
     const loader = document.querySelector('.page-loader');
     setTimeout(() => {
         if (loader) {
@@ -197,6 +201,35 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", type);
 
+
+// ============================================================
+// 7. THEME SWITCHER AVEC PERSISTANCE - VERSION COMPLÈTE
+// ============================================================
+
+// 💾 CHARGEMENT DES PRÉFÉRENCES SAUVEGARDÉES
+function loadThemePreferences() {
+    const savedThemeMode = localStorage.getItem('themeMode');
+    const savedColorTheme = localStorage.getItem('colorTheme');
+    
+    if (savedThemeMode !== null) {
+        currentThemeMode = parseInt(savedThemeMode);
+    }
+    
+    if (savedColorTheme !== null) {
+        currentColorTheme = parseInt(savedColorTheme);
+    }
+    
+    // Appliquer immédiatement (sans notification)
+    applyThemeMode(currentThemeMode, false);
+    applyColorTheme(currentColorTheme, false);
+}
+
+// 💾 SAUVEGARDE DES PRÉFÉRENCES
+function saveThemePreferences() {
+    localStorage.setItem('themeMode', currentThemeMode);
+    localStorage.setItem('colorTheme', currentColorTheme);
+}
+
 const themeModeBtn = document.getElementById('theme-mode-toggle');
 const colorThemeBtn = document.getElementById('color-theme-toggle');
 
@@ -214,26 +247,222 @@ if (colorThemeBtn) {
     });
 }
 
-function applyThemeMode(modeIndex) {
+// 🎨 APPLICATION DU MODE (Sombre/Glass/Glass Marron)
+function applyThemeMode(modeIndex, showNotif = true) {
     const mode = themeModes[modeIndex];
-    document.body.classList.remove('glass-mode');
+    
+    // Retirer TOUTES les classes de thème
+    document.body.classList.remove('glass-mode', 'glass-marron');
+    
+    // Ajouter la nouvelle classe si nécessaire
     if (mode.class) document.body.classList.add(mode.class);
     
-    const icon = themeModeBtn.querySelector('.material-symbols-outlined');
+    // Mettre à jour l'icône du bouton
+    const icon = themeModeBtn?.querySelector('.material-symbols-outlined');
     if (icon) {
         icon.textContent = mode.icon;
         icon.style.color = mode.color;
     }
-    showNotification(mode.name);
+    
+    // 💾 Sauvegarder la préférence
+    saveThemePreferences();
+    
+    // Afficher notification seulement si demandé
+    if (showNotif) showNotification(mode.name);
+    
+    // 🔥 Forcer la mise à jour des couleurs après changement de mode
+    setTimeout(() => {
+        const theme = colorThemes[currentColorTheme];
+        updateElementColors(theme.primary, theme.primaryDark);
+    }, 100);
 }
 
-function applyColorTheme(themeIndex) {
+// 🎨 APPLICATION DU THÈME COULEUR (Vert/Violet/Marron)
+function applyColorTheme(themeIndex, showNotif = true) {
     const theme = colorThemes[themeIndex];
+    
+    // Mettre à jour les variables CSS
     document.documentElement.style.setProperty('--primary', theme.primary);
     document.documentElement.style.setProperty('--primary-dark', theme.primaryDark);
-    showNotification(theme.name);
+    
+    // 🔥 FORCER LA MISE À JOUR IMMÉDIATE
+    updateElementColors(theme.primary, theme.primaryDark);
+    
+    // 💾 Sauvegarder la préférence
+    saveThemePreferences();
+    
+    // Afficher notification seulement si demandé
+    if (showNotif) showNotification(theme.name);
 }
 
+// 🔥 FONCTION DE MISE À JOUR FORCÉE DES COULEURS
+function updateElementColors(primary, primaryDark) {
+    // Convertir hex en rgba pour les ombres
+    const primaryRgba = hexToRgba(primary, 0.6);
+    const primaryLight = hexToRgba(primary, 0.3);
+    
+    // ========== BOUTONS ==========
+    const buttons = document.querySelectorAll('.btn-primary, .btn-cta, .btn-download, .btn-pricing-popular');
+    buttons.forEach(btn => {
+        btn.style.background = primary;
+        btn.style.borderColor = primary;
+    });
+    
+    const btnHover = `
+        .btn-primary:hover,
+        .btn-cta:hover,
+        .btn-download:hover {
+            background: ${primaryDark} !important;
+            box-shadow: 0 15px 40px ${primaryLight} !important;
+        }
+    `;
+    addDynamicStyle('btn-hover', btnHover);
+    
+    // ========== FUSÉE ==========
+    const rocket = document.getElementById('rocketBtn');
+    if (rocket) {
+        rocket.style.background = primary;
+        rocket.style.boxShadow = `0 0 20px ${primaryRgba}`;
+    }
+    
+    const rocketHover = `
+        .scroll-top-btn:hover {
+            background: ${primaryDark} !important;
+            box-shadow: 0 0 30px ${primaryRgba} !important;
+        }
+    `;
+    addDynamicStyle('rocket-hover', rocketHover);
+    
+    // ========== ICÔNES AVEC DÉGRADÉ ==========
+    const icons = document.querySelectorAll('.service-icon, .contact-icon, .pricing-icon, .skill-category-icon, .quote-icon');
+    icons.forEach(icon => {
+        icon.style.background = `linear-gradient(135deg, ${primary}, #3b82f6)`;
+    });
+    
+    // ========== TIMELINE ==========
+    const timelineDots = document.querySelectorAll('.timeline-dot');
+    timelineDots.forEach(dot => {
+        dot.style.background = primary;
+        dot.style.boxShadow = `0 0 20px ${primaryRgba}`;
+    });
+    
+    const timelineLine = document.querySelector('.timeline::before');
+    const timelineStyle = `
+        .timeline::before {
+            background: linear-gradient(180deg, ${primary}, transparent) !important;
+        }
+    `;
+    addDynamicStyle('timeline', timelineStyle);
+    
+    // ========== PROGRESS BARS ==========
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+        bar.style.background = `linear-gradient(90deg, ${primary}, #3b82f6)`;
+    });
+    
+    // ========== BADGES ET TAGS ==========
+    const tagsHover = `
+        .skill-tag:hover,
+        .tech-tag:hover {
+            background: ${primary} !important;
+            color: white !important;
+        }
+    `;
+    addDynamicStyle('tags-hover', tagsHover);
+    
+    // ========== BORDURES ACTIVES ==========
+    const activeStyle = `
+        .filter-btn.active,
+        .nav-links a.active::after,
+        .nav-links-vertical a.active::after {
+            background: ${primary} !important;
+            border-color: ${primary} !important;
+        }
+        
+        .filter-btn:hover,
+        .service-card:hover,
+        .project-card:hover,
+        .contact-item:hover,
+        .timeline-content:hover {
+            border-color: ${primary} !important;
+        }
+    `;
+    addDynamicStyle('active-borders', activeStyle);
+    
+    // ========== BADGES SPÉCIAUX ==========
+    const liveBadges = document.querySelectorAll('.live-badge');
+    liveBadges.forEach(badge => {
+        badge.style.background = primary;
+    });
+    
+    const experienceBadges = document.querySelectorAll('.experience-badge');
+    experienceBadges.forEach(badge => {
+        badge.style.background = primary;
+    });
+    
+    // ========== LIENS PROJECT ==========
+    const projectLinks = document.querySelectorAll('.project-link-primary');
+    projectLinks.forEach(link => {
+        link.style.background = `linear-gradient(135deg, ${primary}, #3b82f6)`;
+    });
+    
+    // ========== QR CODE ==========
+    const qrCodeStyle = `
+        .qr-code::before {
+            background: linear-gradient(135deg, ${primary}, #3b82f6) !important;
+        }
+    `;
+    addDynamicStyle('qr-code', qrCodeStyle);
+    
+    // ========== SECTION TAGS ==========
+    const sectionTags = document.querySelectorAll('.section-tag');
+    sectionTags.forEach(tag => {
+        tag.style.background = `${primary}1A`; // 10% opacity
+        tag.style.color = primary;
+    });
+    
+    // ========== ANIMATED BUBBLE (Hero) ==========
+    const bubbles = document.querySelectorAll('.animated-bubble');
+    bubbles.forEach(bubble => {
+        bubble.style.background = `linear-gradient(135deg, ${primary}, #3b82f6)`;
+    });
+    
+    // ========== SHADOWS DYNAMIQUES ==========
+    const shadowStyle = `
+        .btn-primary:hover,
+        .btn-cta:hover,
+        .service-card:hover,
+        .project-card:hover {
+            box-shadow: 0 20px 60px ${primaryLight} !important;
+        }
+        
+        .premium-badge {
+            box-shadow: 0 5px 20px ${primaryLight} !important;
+        }
+    `;
+    addDynamicStyle('shadows', shadowStyle);
+}
+
+// 🛠️ HELPER: Convertir HEX en RGBA
+function hexToRgba(hex, alpha = 1) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+// 🛠️ HELPER: Ajouter/Mettre à jour des styles dynamiques
+function addDynamicStyle(id, css) {
+    let style = document.getElementById(`dynamic-${id}`);
+    if (!style) {
+        style = document.createElement('style');
+        style.id = `dynamic-${id}`;
+        document.head.appendChild(style);
+    }
+    style.textContent = css;
+}
+
+// 📢 NOTIFICATION DE CHANGEMENT
 function showNotification(text) {
     const oldNotif = document.querySelector('.theme-notification');
     if (oldNotif) oldNotif.remove();
@@ -248,16 +477,16 @@ function showNotification(text) {
         animation: slideInRight 0.5s ease;
         box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         color: var(--text-light); font-weight: 600;
+        font-size: 0.95rem; white-space: nowrap;
     `;
-    notification.textContent = text;
+    notification.innerHTML = `<i class="fas fa-palette" style="margin-right: 8px;"></i>${text}`;
     document.body.appendChild(notification);
     
     setTimeout(() => {
         notification.style.animation = 'slideOutRight 0.5s ease';
         setTimeout(() => notification.remove(), 500);
-    }, 2000);
+    }, 2500);
 }
-
 // ============================================================
 // 9. FUSÉE AVEC FEU - VERSION AMÉLIORÉE
 // ============================================================
