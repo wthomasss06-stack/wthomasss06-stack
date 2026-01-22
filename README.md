@@ -19,7 +19,7 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 
 - 🔭 Je travaille actuellement sur **MonMarket CI** - Marketplace E-commerce multi-vendeurs
 - 🌱 J'apprends constamment **React avancé, Django REST Framework**
-- 👨‍💻 Tous mes projets sont disponibles sur [mon portfolio](https://wthomasss06-stack.github.io/wthomasss06-stack/)
+- 👨‍💻 Tous mes projets sont disponibles sur [mon portfolio](https://akafolio.vercel.app/)
 - 💬 Demandez-moi sur **Python, Flask, Django, React, MySQL, JavaScript**
 - 📫 Comment me contacter : **aka.mbollo@uvci.edu.ci**
 - 📍 Basé à **Abidjan, Côte d'Ivoire**
