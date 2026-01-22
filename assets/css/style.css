@@ -6734,3 +6734,634 @@ section {
         padding: 4px 10px;
     }
 }
+
+
+
+
+/* ============================================
+   HERO CONTACT - VERSION MOBILE OPTIMISÉE
+   ============================================ */
+
+.contact-hero {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 60px 40px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Grille de fond */
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Badge avec icône */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--primary);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.hero-badge i {
+    font-size: 0.9rem;
+}
+
+/* Titre */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.hero-title .highlight {
+    background: linear-gradient(135deg, var(--primary), #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Bloc code */
+.code-block {
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.code-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-red { background: #ef4444; }
+.dot-yellow { background: #fbbf24; }
+.dot-green { background: #10b981; }
+
+.code-title {
+    margin-left: 10px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.code-line {
+    margin-bottom: 8px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: lineAppear 0.5s ease forwards;
+}
+
+@keyframes lineAppear {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.code-line:nth-child(1) { animation-delay: 0.1s; }
+.code-line:nth-child(2) { animation-delay: 0.3s; }
+.code-line:nth-child(3) { animation-delay: 0.5s; }
+.code-line:nth-child(4) { animation-delay: 0.7s; }
+.code-line:nth-child(5) { animation-delay: 0.9s; }
+.code-line:nth-child(6) { animation-delay: 1.1s; }
+.code-line:nth-child(7) { animation-delay: 1.3s; }
+
+/* Coloration syntaxique */
+.keyword { color: #c084fc; font-weight: 600; }
+.function { color: #60a5fa; }
+.string { color: #34d399; }
+.comment { color: #94a3b8; font-style: italic; }
+.variable { color: #fbbf24; }
+
+/* Icônes dans le code */
+.code-line i {
+    font-size: 0.85rem;
+    font-style: normal;
+    margin: 0 2px;
+}
+
+/* Curseur */
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background: var(--primary);
+    animation: blink 1s infinite;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+/* Disponibilité */
+.availability-message {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.05));
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 15px var(--primary);
+    flex-shrink: 0;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.6; }
+}
+
+.availability-text {
+    flex: 1;
+}
+
+.availability-text strong {
+    color: var(--text-light);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.availability-text strong i {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.availability-text span i {
+    font-size: 0.8rem;
+    margin-right: 4px;
+    color: var(--primary);
+}
+
+/* Stats rapides */
+.quick-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    background: rgba(16, 185, 129, 0.05);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.stat-icon i {
+    display: inline-block;
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* ============================================
+   RESPONSIVE TABLETTE (768px - 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .contact-hero {
+        margin: 100px auto 50px;
+        padding: 50px 35px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .code-block {
+        padding: 25px;
+        font-size: 0.9rem;
+    }
+
+    .quick-stats {
+        gap: 15px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE MOBILE (768px et moins)
+   ============================================ */
+
+@media (max-width: 768px) {
+    .contact-hero {
+        margin: 80px 5% 40px;
+        padding: 40px 25px;
+        border-radius: 25px;
+    }
+
+    /* Badge plus compact */
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 6px 16px;
+        gap: 6px;
+    }
+
+    .hero-badge i {
+        font-size: 0.8rem;
+    }
+
+    /* Titre responsive */
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    /* Bloc code adapté */
+    .code-block {
+        padding: 20px;
+        font-size: 0.85rem;
+        line-height: 1.6;
+        margin: 25px 0;
+        border-radius: 12px;
+    }
+
+    .code-header {
+        margin-bottom: 15px;
+        padding-bottom: 12px;
+    }
+
+    .code-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .code-title {
+        font-size: 0.8rem;
+        margin-left: 8px;
+    }
+
+    .code-line {
+        margin-bottom: 6px;
+        font-size: 0.85rem;
+    }
+
+    /* Icônes dans code plus petites */
+    .code-line i {
+        font-size: 0.75rem;
+    }
+
+    /* Curseur adapté */
+    .cursor {
+        height: 16px;
+    }
+
+    /* Disponibilité mobile */
+    .availability-message {
+        padding: 15px 18px;
+        gap: 12px;
+        border-radius: 12px;
+        margin-top: 25px;
+    }
+
+    .status-indicator {
+        width: 10px;
+        height: 10px;
+    }
+
+    .availability-text strong {
+        font-size: 0.95rem;
+        gap: 6px;
+    }
+
+    .availability-text strong i {
+        font-size: 0.9rem;
+    }
+
+    .availability-text span {
+        font-size: 0.85rem;
+    }
+
+    .availability-text span i {
+        font-size: 0.75rem;
+    }
+
+    /* Stats en colonne sur mobile */
+    .quick-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .stat-card {
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+    }
+
+    .stat-icon {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    .stat-value {
+        font-size: 1.6rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* ============================================
+   RESPONSIVE PETIT MOBILE (480px et moins)
+   ============================================ */
+
+@media (max-width: 480px) {
+    .contact-hero {
+        margin: 70px 5% 30px;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    /* Badge très compact */
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 5px 14px;
+    }
+
+    /* Titre plus petit */
+    .hero-title {
+        font-size: 1.7rem;
+        margin-bottom: 18px;
+    }
+
+    /* Code très compact */
+    .code-block {
+        padding: 16px;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin: 20px 0;
+    }
+
+    .code-header {
+        gap: 6px;
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+    }
+
+    .code-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .code-title {
+        font-size: 0.75rem;
+        margin-left: 6px;
+    }
+
+    .code-line {
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+    }
+
+    .code-line i {
+        font-size: 0.7rem;
+    }
+
+    .cursor {
+        height: 14px;
+        width: 1.5px;
+    }
+
+    /* Disponibilité compacte */
+    .availability-message {
+        padding: 12px 15px;
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .status-indicator {
+        width: 8px;
+        height: 8px;
+    }
+
+    .availability-text strong {
+        font-size: 0.9rem;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .availability-text strong i {
+        font-size: 0.85rem;
+    }
+
+    .availability-text span {
+        font-size: 0.8rem;
+        display: block;
+        margin-top: 5px;
+    }
+
+    /* Stats très compactes */
+    .quick-stats {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .stat-card {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .stat-icon {
+        font-size: 1.5rem;
+    }
+
+    .stat-value {
+        font-size: 1.4rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+}
+
+/* ============================================
+   EXTRA PETIT MOBILE (360px et moins)
+   ============================================ */
+
+@media (max-width: 360px) {
+    .contact-hero {
+        padding: 25px 15px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .code-block {
+        padding: 14px;
+        font-size: 0.75rem;
+    }
+
+    .code-line {
+        font-size: 0.75rem;
+    }
+
+    .stat-card {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .stat-icon {
+        font-size: 1.3rem;
+    }
+
+    .stat-value {
+        font-size: 1.2rem;
+    }
+}
+
+/* ============================================
+   OPTIMISATIONS PERFORMANCES MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Désactiver animations lourdes */
+    .code-line {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    @keyframes iconFloat {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-3px); }
+    }
+
+    /* Réduire blur pour performances */
+    .contact-hero {
+        backdrop-filter: blur(15px);
+    }
+
+    .code-block {
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* ============================================
+   MODE PAYSAGE MOBILE
+   ============================================ */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .contact-hero {
+        padding: 30px 20px;
+        margin: 60px 5% 30px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .code-block {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+
+    .quick-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stat-card {
+        padding: 12px;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITÉ
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .code-line,
+    .status-indicator,
+    .stat-icon i,
+    .cursor {
+        animation: none !important;
+    }
+}
