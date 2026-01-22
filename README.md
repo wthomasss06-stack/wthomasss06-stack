@@ -119,7 +119,7 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 En production (100%)
 - Site vitrine moderne pour la présentation de services technologiques
 - Technologies : Django, HTML/Tailwind CSS, JavaScript
-- [Voir le site](https://aka0006.pythonanywhere.com)
+- [Voir le site](https://techflow-ten.vercel.app/)
 
 ### 🗺️ chap-chapMAP - Navigation Intelligente
 **Démo fonctionnelle**
