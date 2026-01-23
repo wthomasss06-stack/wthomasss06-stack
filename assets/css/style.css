@@ -3349,26 +3349,26 @@ section {
     }
 
     footer p {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.9rem;
     }
 
     .social-links {
         gap: 8px;
-        margin-bottom: 1rem;
+        margin-bottom: 0.9rem;
     }
 
     .social-link {
-        width: 36px;
-        height: 36px;
+        width: 34px;
+        height: 34px;
     }
 
     .social-link i {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     footer p:last-child {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     /* Scroll to top button - Réduit */
@@ -3437,11 +3437,11 @@ section {
 
     /* Projects */
     .project-title {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .project-description {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     /* Contact */
@@ -3460,6 +3460,20 @@ section {
 
     .cta-container p {
         font-size: 0.85rem;
+    }
+
+    /* Footer encore plus petit */
+    footer p {
+        font-size: 0.65rem;
+    }
+
+    .social-link {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-link i {
+        font-size: 0.8rem;
     }
 }
 
@@ -3519,6 +3533,20 @@ section {
 
     .cta-container h2 {
         font-size: 1.3rem;
+    }
+
+    /* Footer ultra-petit */
+    footer p {
+        font-size: 0.6rem;
+    }
+
+    .social-link {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-link i {
+        font-size: 0.75rem;
     }
 }
 
