@@ -16,8 +16,8 @@ const themeModes = [
 ];
 
 const colorThemes = [
-    { name: 'Vert Émeraude', primary: '#10b981', primaryDark: '#059669' },
-    { name: 'Violet Mystique', primary: '#8b5cf6', primaryDark: '#7c3aed' }
+    { name: 'Violet Mystique', primary: '#8b5cf6', primaryDark: '#7c3aed' }, // ← Sera par défaut
+    { name: 'Vert Émeraude', primary: '#10b981', primaryDark: '#059669' }
 ];
 
 // ============================================================
@@ -805,3 +805,177 @@ style.textContent = `
 `;
 document.head.appendChild(style);
     
+
+
+
+
+
+
+// ============================================================
+// SYSTÈME DE PARTICULES ANIMÉES - OPTIMISÉ PERFORMANCE
+// À ajouter AVANT script.js dans le HTML
+// ============================================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Créer le canvas
+    const canvas = document.createElement('canvas');
+    canvas.id = 'particles-canvas';
+    document.body.prepend(canvas);
+    
+    const ctx = canvas.getContext('2d');
+    let particlesArray = [];
+    let mouse = { x: null, y: null, radius: 150 };
+    
+    // Dimensions du canvas
+    function setCanvasSize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    setCanvasSize();
+    
+    // Écouteur de souris
+    window.addEventListener('mousemove', (e) => {
+        mouse.x = e.x;
+        mouse.y = e.y;
+    });
+    
+    window.addEventListener('mouseleave', () => {
+        mouse.x = null;
+        mouse.y = null;
+    });
+    
+    // Classe Particule
+    class Particle {
+        constructor(x, y, directionX, directionY, size, color) {
+            this.x = x;
+            this.y = y;
+            this.directionX = directionX;
+            this.directionY = directionY;
+            this.size = size;
+            this.color = color;
+        }
+        
+        // Dessiner la particule
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+            ctx.fillStyle = this.color;
+            ctx.fill();
+        }
+        
+        // Mettre à jour la position
+        update() {
+            if (this.x > canvas.width || this.x < 0) {
+                this.directionX = -this.directionX;
+            }
+            if (this.y > canvas.height || this.y < 0) {
+                this.directionY = -this.directionY;
+            }
+            
+            // Interaction avec la souris
+            let dx = mouse.x - this.x;
+            let dy = mouse.y - this.y;
+            let distance = Math.sqrt(dx * dx + dy * dy);
+            
+            if (distance < mouse.radius + this.size) {
+                if (mouse.x < this.x && this.x < canvas.width - this.size * 10) {
+                    this.x += 2;
+                }
+                if (mouse.x > this.x && this.x > this.size * 10) {
+                    this.x -= 2;
+                }
+                if (mouse.y < this.y && this.y < canvas.height - this.size * 10) {
+                    this.y += 2;
+                }
+                if (mouse.y > this.y && this.y > this.size * 10) {
+                    this.y -= 2;
+                }
+            }
+            
+            // Mouvement
+            this.x += this.directionX;
+            this.y += this.directionY;
+            
+            this.draw();
+        }
+    }
+    
+    // Initialiser les particules
+    function init() {
+        particlesArray = [];
+        
+        // Moins de particules sur mobile
+        const isMobile = window.innerWidth < 768;
+        let numberOfParticles = isMobile ? 30 : 80;
+        
+        for (let i = 0; i < numberOfParticles; i++) {
+            let size = (Math.random() * 2) + 1;
+            let x = Math.random() * (canvas.width - size * 2) + size;
+            let y = Math.random() * (canvas.height - size * 2) + size;
+            let directionX = (Math.random() * 0.4) - 0.2;
+            let directionY = (Math.random() * 0.4) - 0.2;
+            
+            // Couleur selon le thème
+            const isDarkMode = !document.body.classList.contains('glass-mode');
+            let color = isDarkMode ? 'rgba(16, 185, 129, 0.6)' : 'rgba(15, 23, 42, 0.3)';
+            
+            particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+        }
+    }
+    
+    // Connecter les particules proches
+    function connect() {
+        let opacityValue = 1;
+        for (let a = 0; a < particlesArray.length; a++) {
+            for (let b = a; b < particlesArray.length; b++) {
+                let dx = particlesArray[a].x - particlesArray[b].x;
+                let dy = particlesArray[a].y - particlesArray[b].y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance < 120) {
+                    opacityValue = 1 - (distance / 120);
+                    const isDarkMode = !document.body.classList.contains('glass-mode');
+                    ctx.strokeStyle = isDarkMode 
+                        ? `rgba(16, 185, 129, ${opacityValue * 0.3})` 
+                        : `rgba(15, 23, 42, ${opacityValue * 0.15})`;
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                    ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+    
+    // Boucle d'animation
+    function animate() {
+        requestAnimationFrame(animate);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        for (let i = 0; i < particlesArray.length; i++) {
+            particlesArray[i].update();
+        }
+        connect();
+    }
+    
+    // Gérer le redimensionnement
+    window.addEventListener('resize', () => {
+        setCanvasSize();
+        init();
+    });
+    
+    // Observer les changements de thème
+    const observer = new MutationObserver(() => {
+        init(); // Réinitialiser les couleurs des particules
+    });
+    
+    observer.observe(document.body, {
+        attributes: true,
+        attributeFilter: ['class']
+    });
+    
+    // Lancer l'animation
+    init();
+    animate();
+});
