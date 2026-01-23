@@ -90,216 +90,248 @@
 
     <!-- Contact Section -->
     <section id="contact">
+        <!-- Header Section -->
         <div class="section-header">
             <span class="section-tag">Contact</span>
             <h2 class="section-title">&lt;Discutons de <span class="highlight">votre projet/&gt;</span></h2>
-            <p class="section-description">
-                <strong><i class="fas fa-check-circle"></i> Disponible pour de nouveaux projets</strong><br>
-            </p>
         </div>
 
-        <!-- Code animé -->
-        <div class="code-block">
-            <div class="code-header">
-                <span class="code-dot dot-red"></span>
-                <span class="code-dot dot-yellow"></span>
-                <span class="code-dot dot-green"></span>
-                <span class="code-title">contact.js</span>
-            </div>
-
-            <div class="code-line">
-                <span class="keyword">import</span> { <span class="function">useState</span> } <span class="keyword">from</span> <span class="string">"react"</span>;
-            </div>
-
-            <div class="code-line">
-                <span class="comment">// <i class="fas fa-star"></i> Poussière d'étoiles en cours:</span>
-            </div>
-
-            <div class="code-line">
-                <span class="comment">// Création d'un email cosmique <i class="fas fa-rocket"></i></span>
-            </div>
-
-            <div class="code-line">
-                <span class="keyword">const</span> [<span class="variable">sender</span>, <span class="function">setSender</span>] = <span class="string">"<i class="fas fa-user"></i>"</span>;
-            </div>
-
-            <div class="code-line">
-                <span class="keyword">const</span> [<span class="variable">recipient</span>, <span class="function">setRecipient</span>] = <span class="string">"<i class="fas fa-envelope"></i>"</span>;
-            </div>
-
-            <div class="code-line">
-                <span class="keyword">const</span> [<span class="variable">subject</span>, <span class="function">setSubject</span>] = <span class="string">"<i class="fas fa-sparkles"></i>"</span>;
-            </div>
-
-            <div class="code-line">
-                <span class="keyword">const</span> [<span class="variable">message</span>, <span class="function">setMessage</span>] = <span class="string">"Salut, explorateur·rice ! <i class="fas fa-hand-wave"></i><br>&nbsp;&nbsp;Ton message vient de traverser le réseau et d'atterrir dans ma boîte mail.<br>&nbsp;&nbsp;Je te réponds dès que possible.<br>&nbsp;&nbsp;À bientôt,`</span><span class="cursor"></span>
-            </div>
-        </div>
-
-        
-
-        <!-- Stats -->
-        <div class="quick-stats">
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-bolt"></i>
+        <!-- Hero Contact -->
+        <div class="contact-hero">
+            <div class="hero-content">
+                <!-- Badge de disponibilité -->
+                <div class="hero-badge">
+                    <i class="fas fa-circle" style="color: var(--primary); font-size: 0.6rem; animation: pulse 2s infinite;"></i>
+                    Disponible maintenant
                 </div>
-                <div class="stat-value">&lt;24h</div>
-                <div class="stat-label">Temps de réponse</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <div class="stat-value">100%</div>
-                <div class="stat-label">Disponibilité</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <div class="stat-value">9+</div>
-                <div class="stat-label">Projets livrés</div>
-            </div>
-        </div>
-    </div>
-</div>
 
+                <!-- Titre principal -->
+                <h1 class="hero-title">
+                    Transformons votre <span class="highlight">idée</span> en <span class="highlight">réalité</span>
+                </h1>
 
-        <!-- GRILLE : FORMULAIRE + INFOS -->
-        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; max-width: 1400px; margin: 0 auto; align-items: start;">
-            
-            <!-- COLONNE 1 : FORMULAIRE -->
-            <div>
-                <form id="contactForm" style="background: var(--glass-bg); padding: 40px; border-radius: 25px; border: 1px solid var(--glass-border);">
-                    <!-- Status du formulaire -->
-                    <div id="formStatus" style="display: none; padding: 15px; border-radius: 12px; margin-bottom: 20px;"></div>
-
-                    <!-- Nom -->
-                    <div style="margin-bottom: 25px;">
-                        <label style="display: block; margin-bottom: 8px; color: var(--text-light); font-weight: 600;">
-                            <i class="fas fa-user" style="margin-right: 8px; color: var(--primary);"></i>
-                            Nom complet *
-                        </label>
-                        <input type="text" id="name" required
-                            style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: var(--text-light); font-size: 1rem;"
-                            placeholder="Ex: Jean Kouassi">
-                        <small id="nameError" style="color: #ef4444; display: none; margin-top: 5px;"></small>
+                <!-- Code Block Animé -->
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-dot dot-red"></span>
+                        <span class="code-dot dot-yellow"></span>
+                        <span class="code-dot dot-green"></span>
+                        <span class="code-title">contact.js</span>
                     </div>
 
-                    <!-- Email -->
-                    <div style="margin-bottom: 25px;">
-                        <label style="display: block; margin-bottom: 8px; color: var(--text-light); font-weight: 600;">
-                            <i class="fas fa-envelope" style="margin-right: 8px; color: var(--primary);"></i>
-                            Email *
-                        </label>
-                        <input type="email" id="email" required
-                            style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: var(--text-light); font-size: 1rem;"
-                            placeholder="jean.kouassi@exemple.com">
-                        <small id="emailError" style="color: #ef4444; display: none; margin-top: 5px;"></small>
+                    <div class="code-line">
+                        <span class="keyword">import</span> { <span class="function">useState</span> } <span class="keyword">from</span> <span class="string">"react"</span>;
+                    </div>
+
+                    <div class="code-line">
+                        <span class="comment">// <i class="fas fa-star"></i> Configuration du système de contact</span>
+                    </div>
+
+                    <div class="code-line">
+                        <span class="keyword">const</span> [<span class="variable">responseTime</span>] = <span class="string">"&lt;24h"</span>;
+                    </div>
+
+                    <div class="code-line">
+                        <span class="keyword">const</span> [<span class="variable">availability</span>] = <span class="string">"100%"</span>;
+                    </div>
+
+                    <div class="code-line">
+                        <span class="keyword">const</span> [<span class="variable">status</span>] = <span class="string">"ready"</span>;
+                    </div>
+
+                    <div class="code-line">
+                        <span class="comment">// <i class="fas fa-rocket"></i> Prêt pour de nouveaux défis !</span><span class="cursor"></span>
+                    </div>
+                </div>
+
+                
+
+                <!-- Quick Stats -->
+                <div class="quick-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="stat-value">&lt;24h</div>
+                        <div class="stat-label">Temps de réponse</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Disponibilité</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="stat-value">9+</div>
+                        <div class="stat-label">Projets livrés</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grille Principale : Formulaire + Coordonnées -->
+        <div class="contact-grid">
+            
+            <!-- COLONNE 1 : FORMULAIRE DE CONTACT -->
+            <div>
+                <form id="contactForm">
+                    <!-- Status du formulaire -->
+                    <div id="formStatus"></div>
+
+                    <!-- En-tête du formulaire -->
+                    <div style="margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid var(--glass-border);">
+                        <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--text-light); margin-bottom: 8px;">
+                            <i class="fas fa-envelope-open-text" style="color: var(--primary); margin-right: 10px;"></i>
+                            Envoyez-moi un message
+                        </h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">
+                            Remplissez le formulaire ci-dessous et je vous répondrai rapidement
+                        </p>
+                    </div>
+
+                    <!-- Ligne 1 : Nom + Email (Grid 2 colonnes) -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+                        <!-- Nom -->
+                        <div class="form-group">
+                            <label class="form-label">
+                                <i class="fas fa-user"></i>
+                                Nom complet *
+                            </label>
+                            <input type="text" id="name" class="form-input" required
+                                placeholder="Ex: Jean Kouassi">
+                            <small id="nameError" class="form-error"></small>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label class="form-label">
+                                <i class="fas fa-envelope"></i>
+                                Email *
+                            </label>
+                            <input type="email" id="email" class="form-input" required
+                                placeholder="jean.kouassi@exemple.com">
+                            <small id="emailError" class="form-error"></small>
+                        </div>
                     </div>
 
                     <!-- Type de projet -->
-                    <div style="margin-bottom: 25px;">
-                        <label style="display: block; margin-bottom: 8px; color: var(--text-light); font-weight: 600;">
-                            <i class="fas fa-briefcase" style="margin-right: 8px; color: var(--primary);"></i>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-briefcase"></i>
                             Type de projet *
                         </label>
-                        <select id="projectType" required
-                            style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: var(--text-light); font-size: 1rem;">
-                            <option value="">Sélectionnez...</option>
-                            <option value="site-vitrine">Site Vitrine</option>
-                            <option value="e-commerce">E-commerce</option>
-                            <option value="application-web">Application Web</option>
-                            <option value="api">API / Backend</option>
-                            <option value="maintenance">Maintenance</option>
-                            <option value="recrutement">Candidature spontanée</option>
-                            <option value="autre">Autre</option>
+                        <select id="projectType" class="form-select" required>
+                            <option value="">Sélectionnez votre besoin...</option>
+                            <option value="site-vitrine">🌐 Site Vitrine</option>
+                            <option value="e-commerce">🛒 E-commerce</option>
+                            <option value="application-web">⚡ Application Web</option>
+                            <option value="api">🔧 API / Backend</option>
+                            <option value="maintenance">🔨 Maintenance / Support</option>
+                            <option value="recrutement">💼 Candidature spontanée</option>
+                            <option value="autre">✨ Autre</option>
                         </select>
                     </div>
 
                     <!-- Message -->
-                    <div style="margin-bottom: 30px;">
-                        <label style="display: block; margin-bottom: 8px; color: var(--text-light); font-weight: 600;">
-                            <i class="fas fa-comment-dots" style="margin-right: 8px; color: var(--primary);"></i>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-comment-dots"></i>
                             Message *
                         </label>
-                        <textarea id="message" required rows="5"
-                            style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: var(--text-light); font-size: 1rem; resize: vertical;"
-                            placeholder="Décrivez brièvement votre besoin..."></textarea>
-                        <small id="messageError" style="color: #ef4444; display: none; margin-top: 5px;"></small>
+                        <textarea id="message" class="form-textarea" required rows="6"
+                            placeholder="Décrivez votre projet en quelques lignes..."></textarea>
+                        <small id="messageError" class="form-error"></small>
                     </div>
 
-                    <!-- Bouton -->
-                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 16px; font-size: 1.1rem;">
-                        <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>
+                    <!-- Bouton Submit -->
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
                         <span id="submitText">Envoyer le message</span>
-                        <i class="fas fa-spinner fa-spin" id="submitLoader" style="display: none; margin-left: 10px;"></i>
+                        <i class="fas fa-spinner fa-spin" id="submitLoader"></i>
                     </button>
 
-                    <p style="text-align: center; margin-top: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <i class="fas fa-lock" style="margin-right: 5px;"></i>
-                        Vos données sont sécurisées
+                    <!-- Note de confidentialité -->
+                    <p class="privacy-notice">
+                        <i class="fas fa-lock"></i>
+                        Vos données sont sécurisées et ne seront jamais partagées
                     </p>
                 </form>
             </div>
 
-            <!-- COLONNE 2 : INFOS + CV -->
+            <!-- COLONNE 2 : INFOS DE CONTACT + CV -->
             <div style="display: flex; flex-direction: column; gap: 30px;">
                 
-                <!-- Coordonnées -->
-                <div style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 30px;">
-                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 25px; color: var(--text-light);">
-                        <i class="fas fa-address-card" style="margin-right: 10px; color: var(--primary);"></i>
+                <!-- Carte Coordonnées -->
+                <div style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 35px;">
+                    <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 25px; color: var(--text-light); display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-address-card" style="color: var(--primary);"></i>
                         Mes coordonnées
                     </h3>
 
-                    <div class="contact-info" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
                         <!-- Téléphone -->
-                        <div style="display: flex; align-items: center; gap: 15px;">
-                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                <i class="fas fa-phone" style="color: white; font-size: 1.2rem;"></i>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
                             </div>
-                            <div>
-                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-bottom: 3px; color: var(--text-muted);">Téléphone</h4>
-                                <a href="tel:+2250142507750" style="color: var(--text-light); text-decoration: none; font-weight: 600;">+225 01 42 50 77 50</a>
+                            <div class="contact-details">
+                                <h4>Téléphone</h4>
+                                <a href="tel:+2250142507750">+225 01 42 50 77 50</a>
                             </div>
                         </div>
 
                         <!-- Email -->
-                        <div style="display: flex; align-items: center; gap: 15px;">
-                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                <i class="fas fa-envelope" style="color: white; font-size: 1.2rem;"></i>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
                             </div>
-                            <div>
-                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-bottom: 3px; color: var(--text-muted);">Email</h4>
-                                <a href="mailto:aka.mbollo@uvci.edu.ci" style="color: var(--text-light); text-decoration: none; font-weight: 600; font-size: 0.9rem;">aka.mbollo@uvci.edu.ci</a>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:aka.mbollo@uvci.edu.ci">aka.mbollo@uvci.edu.ci</a>
                             </div>
                         </div>
 
                         <!-- Localisation -->
-                        <div style="display: flex; align-items: center; gap: 15px;">
-                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                <i class="fas fa-map-marker-alt" style="color: white; font-size: 1.2rem;"></i>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div>
-                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-bottom: 3px; color: var(--text-muted);">Localisation</h4>
-                                <p style="color: var(--text-light); margin: 0; font-weight: 600;">Côte d'Ivoire</p>
+                            <div class="contact-details">
+                                <h4>Localisation</h4>
+                                <p>Abidjan, Côte d'Ivoire</p>
                             </div>
                         </div>
+
+                    </div>
+
+                    <!-- Réseaux sociaux -->
+                    <div class="social-links">
+                        <a href="https://github.com/wthomasss06-stack" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aka-m-bollo-60a1b1340" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/2250142507750" target="_blank" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- CV Download -->
-                <div id="cv" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 30px; text-align: center;">
-                    <div class="qr-code" style="width: 180px; height: 180px; background: white; border-radius: 15px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); position: relative;">
-                        <img src="assets/images/qrcodeCV.png" alt="QR Code CV" style="width: 100%; height: 100%; object-fit: contain;">
+                <!-- Carte CV Download -->
+                <div class="cv-download">
+                    <div class="qr-code">
+                        <img src="assets/images/qrcodeCV.png" alt="QR Code CV" style="width: 100%; height: 100%; object-fit: contain; border-radius: 15px;">
                     </div>
-                    <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">Télécharger mon CV</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.9rem;">Scannez le QR code ou cliquez ci-dessous</p>
-                    <a href="assets/CV_MBOLLO_AKA_ELVIS.pdf" class="btn-download" download style="background: var(--primary); color: white; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease; font-size: 0.95rem;">
+                    <h3>Télécharger mon CV</h3>
+                    <p>Scannez le QR code ou cliquez sur le bouton</p>
+                    <a href="assets/CV_MBOLLO_AKA_ELVIS.pdf" class="btn-download" download>
                         <i class="fas fa-download"></i>
-                        Télécharger CV
+                        Télécharger CV (PDF)
                     </a>
                 </div>
 
@@ -314,14 +346,14 @@
         </p>
         
         <div class="social-links" style="display: flex; gap: 15px; justify-content: center; margin-bottom: 1.5rem;">
-            <a href="https://github.com/wthomasss06-stack" target="_blank" class="social-link" style="width: 50px; height: 50px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--text-light); text-decoration: none; transition: all 0.3s ease;">
-                <i class="fab fa-github" style="font-size: 1.3rem;"></i>
+            <a href="https://github.com/wthomasss06-stack" target="_blank" class="social-link" title="GitHub">
+                <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/aka-m-bollo-60a1b1340" target="_blank" class="social-link" style="width: 50px; height: 50px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--text-light); text-decoration: none; transition: all 0.3s ease;">
-                <i class="fab fa-linkedin-in" style="font-size: 1.3rem;"></i>
+            <a href="https://www.linkedin.com/in/aka-m-bollo-60a1b1340" target="_blank" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://wa.me/2250142507750" target="_blank" class="social-link" style="width: 50px; height: 50px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--text-light); text-decoration: none; transition: all 0.3s ease;">
-                <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i>
+            <a href="https://wa.me/2250142507750" target="_blank" class="social-link" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
             </a>
         </div>
         
