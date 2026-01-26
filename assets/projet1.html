@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MonCashJour Pro - Gestion Commerciale Avancée</title>
+    <!-- Ajouter avant </head> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981'/%3E%3Cstop offset='100%25' style='stop-color:%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23g1)'/%3E%3Cpath d='M25 70 L35 50 L50 60 L65 35 L75 45' stroke='white' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='25' cy='70' r='5' fill='white'/%3E%3Ccircle cx='35' cy='50' r='5' fill='white'/%3E%3Ccircle cx='50' cy='60' r='5' fill='white'/%3E%3Ccircle cx='65' cy='35' r='5' fill='white'/%3E%3Ccircle cx='75' cy='45' r='5' fill='white'/%3E%3C/svg%3E">
     <style>
         /* ========== VARIABLES ========== */
 :root {
@@ -863,6 +867,36 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-dark);
 }
+
+/* Animation logo */
+.login-logo svg {
+    animation: logoFloat 3s ease-in-out infinite, logoRotate 6s linear infinite;
+}
+
+@keyframes logoRotate {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+.login-logo svg circle,
+.login-logo svg rect,
+.login-logo svg text {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -941,9 +975,46 @@ body {
     <!-- ========== LOGIN SCREEN ========== -->
     <div id="login-screen">
         <div class="login-card">
-            <div class="login-logo">
-                <i class="fas fa-chart-line"></i>
-            </div>
+            <div class="login-logo" style="background: transparent; box-shadow: none;">
+    <svg width="90" height="90" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#10b981"/>
+                <stop offset="50%" style="stop-color:#14b8a6"/>
+                <stop offset="100%" style="stop-color:#3b82f6"/>
+            </linearGradient>
+            <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#ffffff"/>
+                <stop offset="100%" style="stop-color:#e0f2fe"/>
+            </linearGradient>
+            <filter id="glow">
+                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+        
+        <!-- Fond avec effet de profondeur -->
+        <circle cx="50" cy="50" r="48" fill="url(#bgGrad)"/>
+        <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+        
+        <!-- Initiales MCJ -->
+        <text x="50" y="68" 
+              font-family="Arial Black, Impact, sans-serif" 
+              font-size="38" 
+              font-weight="900" 
+              fill="url(#textGrad)" 
+              text-anchor="middle"
+              filter="url(#glow)"
+              letter-spacing="-2">MCJ</text>
+        
+        <!-- Petit point décoratif -->
+        <circle cx="78" cy="28" r="6" fill="#fbbf24" opacity="0.9"/>
+        <circle cx="78" cy="28" r="4" fill="#fef3c7"/>
+    </svg>
+</div>
             
             <div class="text-center mb-4">
                 <h2 class="fw-bold mb-2">MonCashJour Pro</h2>
@@ -988,7 +1059,19 @@ body {
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <div>
-                        <h4 class="mb-0 fw-bold">MonCashJour Pro</h4>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+    <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" fill="white" opacity="0.95"/>
+        <defs>
+            <linearGradient id="miniGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#10b981"/>
+                <stop offset="100%" style="stop-color:#3b82f6"/>
+            </linearGradient>
+        </defs>
+        <text x="50" y="68" font-family="Arial Black" font-size="40" font-weight="900" fill="url(#miniGrad)" text-anchor="middle">₣</text>
+    </svg>
+    <h4 class="mb-0 fw-bold">MonCashJour Pro</h4>
+</div>
                         <small id="user-info" class="opacity-75"></small>
                     </div>
                     <div class="d-flex gap-2">
@@ -2055,28 +2138,233 @@ function showTab(tab) {
     if (tab === 'produits') renderProduits();
 }
 
-// ==================== EXPORT ====================
-function exportData() {
-    const data = {
-        ventes,
-        historique,
-        produits,
-        clients,
-        user: currentUser,
-        exportDate: new Date().toISOString()
-    };
+// ==================== EXPORT IMAGE PNG PREMIUM ====================
+async function exportData() {
+    showToast('Génération du rapport PNG... ⏳', 'info');
     
-    const dataStr = JSON.stringify(data, null, 2);
-    const dataBlob = new Blob([dataStr], { type: 'application/json' });
-    const url = URL.createObjectURL(dataBlob);
-    
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `moncashjour_${new Date().toISOString().split('T')[0]}.json`;
-    link.click();
-    
-    URL.revokeObjectURL(url);
-    showToast('Données exportées avec succès! 📥', 'success');
+    try {
+        // Créer un conteneur temporaire pour le rapport
+        const reportContainer = document.createElement('div');
+        reportContainer.style.cssText = `
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            width: 1200px;
+            background: white;
+            padding: 40px;
+            font-family: 'Inter', sans-serif;
+        `;
+        document.body.appendChild(reportContainer);
+        
+        // Calculer les statistiques
+        const totalMonth = historique.reduce((sum, j) => sum + j.totalJour, 0) + 
+                           ventes.reduce((sum, v) => sum + v.montantTotal, 0);
+        const totalToday = ventes.reduce((sum, v) => sum + v.montantTotal, 0);
+        const avgDay = historique.length > 0 ? totalMonth / historique.length : 0;
+        const bestDay = historique.length > 0 ? Math.max(...historique.map(j => j.totalJour)) : 0;
+        
+        const totalCash = ventes.filter(v => v.typePaiement === 'cash').reduce((s, v) => s + v.montantTotal, 0);
+        const totalMM = ventes.filter(v => v.typePaiement === 'mobilemoney').reduce((s, v) => s + v.montantTotal, 0);
+        const total = totalCash + totalMM;
+        
+        const topProducts = [...produits]
+            .sort((a, b) => (b.ventes || 0) - (a.ventes || 0))
+            .slice(0, 5);
+        
+        // Générer le HTML du rapport
+        reportContainer.innerHTML = `
+            <div style="background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); padding: 40px; border-radius: 20px 20px 0 0; color: white; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+                <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+                
+                <div style="position: relative; z-index: 1;">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+                        <div style="width: 80px; height: 80px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                            <span style="font-size: 36px; font-weight: 900; background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">MCJ</span>
+                        </div>
+                        <div>
+                            <h1 style="margin: 0; font-size: 42px; font-weight: 900; text-shadow: 0 2px 10px rgba(0,0,0,0.2);">MonCashJour Pro</h1>
+                            <p style="margin: 5px 0 0 0; font-size: 18px; opacity: 0.9;">Rapport d'activité - ${new Date().toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                        </div>
+                    </div>
+                    <div style="border-top: 2px solid rgba(255,255,255,0.3); padding-top: 15px; margin-top: 15px;">
+                        <p style="margin: 0; font-size: 14px; opacity: 0.8;">👤 Utilisateur: ${currentUser.phone}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="padding: 40px; background: white;">
+                <!-- Statistiques Clés -->
+                <div style="margin-bottom: 40px;">
+                    <h2 style="font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
+                        📊 Statistiques Clés
+                    </h2>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                        <div style="background: white; border: 2px solid #10b981; border-radius: 16px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                            <div style="width: 50px; height: 50px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                                <span style="font-size: 28px;">💰</span>
+                            </div>
+                            <p style="margin: 0 0 8px 0; color: #6b7280; font-size: 13px; font-weight: 600; text-transform: uppercase;">Chiffre d'affaires total</p>
+                            <p style="margin: 0; font-size: 28px; font-weight: 900; color: #10b981;">${formatMontant(totalMonth)}</p>
+                        </div>
+                        
+                        <div style="background: white; border: 2px solid #3b82f6; border-radius: 16px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                            <div style="width: 50px; height: 50px; background: rgba(59, 130, 246, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                                <span style="font-size: 28px;">📈</span>
+                            </div>
+                            <p style="margin: 0 0 8px 0; color: #6b7280; font-size: 13px; font-weight: 600; text-transform: uppercase;">Ventes aujourd'hui</p>
+                            <p style="margin: 0; font-size: 28px; font-weight: 900; color: #3b82f6;">${formatMontant(totalToday)}</p>
+                        </div>
+                        
+                        <div style="background: white; border: 2px solid #a855f7; border-radius: 16px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                            <div style="width: 50px; height: 50px; background: rgba(168, 85, 247, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                                <span style="font-size: 28px;">📊</span>
+                            </div>
+                            <p style="margin: 0 0 8px 0; color: #6b7280; font-size: 13px; font-weight: 600; text-transform: uppercase;">Moyenne journalière</p>
+                            <p style="margin: 0; font-size: 28px; font-weight: 900; color: #a855f7;">${formatMontant(Math.round(avgDay))}</p>
+                        </div>
+                        
+                        <div style="background: white; border: 2px solid #f59e0b; border-radius: 16px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                            <div style="width: 50px; height: 50px; background: rgba(245, 158, 11, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                                <span style="font-size: 28px;">🏆</span>
+                            </div>
+                            <p style="margin: 0 0 8px 0; color: #6b7280; font-size: 13px; font-weight: 600; text-transform: uppercase;">Meilleure journée</p>
+                            <p style="margin: 0; font-size: 28px; font-weight: 900; color: #f59e0b;">${formatMontant(bestDay)}</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Répartition des Paiements -->
+                <div style="margin-bottom: 40px;">
+                    <h2 style="font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
+                        💳 Répartition des Paiements
+                    </h2>
+                    <div style="background: #f9fafb; border-radius: 16px; padding: 30px;">
+                        <div style="margin-bottom: 25px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span style="font-weight: 700; color: #0f172a; font-size: 16px;">💵 Cash</span>
+                                <span style="font-weight: 700; color: #10b981; font-size: 16px;">${formatMontant(totalCash)} (${total ? Math.round(totalCash/total*100) : 0}%)</span>
+                            </div>
+                            <div style="background: #e5e7eb; height: 20px; border-radius: 10px; overflow: hidden;">
+                                <div style="background: linear-gradient(90deg, #10b981 0%, #059669 100%); height: 100%; width: ${total ? (totalCash/total*100) : 0}%; border-radius: 10px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span style="font-weight: 700; color: #0f172a; font-size: 16px;">📱 Mobile Money</span>
+                                <span style="font-weight: 700; color: #3b82f6; font-size: 16px;">${formatMontant(totalMM)} (${total ? Math.round(totalMM/total*100) : 0}%)</span>
+                            </div>
+                            <div style="background: #e5e7eb; height: 20px; border-radius: 10px; overflow: hidden;">
+                                <div style="background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%); height: 100%; width: ${total ? (totalMM/total*100) : 0}%; border-radius: 10px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Top Produits -->
+                <div style="margin-bottom: 40px;">
+                    <h2 style="font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
+                        ⭐ Top 5 Produits les Plus Vendus
+                    </h2>
+                    <div style="background: #f9fafb; border-radius: 16px; padding: 30px;">
+                        ${topProducts.length > 0 && topProducts[0].ventes > 0 ? topProducts.map((p, index) => {
+                            const maxVentes = topProducts[0].ventes || 1;
+                            const percentage = maxVentes > 0 ? ((p.ventes || 0) / maxVentes * 100) : 0;
+                            const colors = ['#10b981', '#a855f7', '#f59e0b', '#3b82f6', '#06b6d4'];
+                            const medals = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'];
+                            
+                            return `
+                                <div style="margin-bottom: ${index < topProducts.length - 1 ? '20px' : '0'};">
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 10px; align-items: center;">
+                                        <div style="display: flex; align-items: center; gap: 10px;">
+                                            <span style="font-size: 24px;">${medals[index]}</span>
+                                            <span style="font-weight: 700; color: #0f172a; font-size: 15px;">${p.nom}</span>
+                                        </div>
+                                        <span style="font-weight: 700; font-size: 15px;" style="color: ${colors[index]};">${p.ventes || 0} vente${(p.ventes || 0) > 1 ? 's' : ''}</span>
+                                    </div>
+                                    <div style="background: #e5e7eb; height: 16px; border-radius: 8px; overflow: hidden;">
+                                        <div style="background: ${colors[index]}; height: 100%; width: ${percentage}%; border-radius: 8px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);"></div>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('') : '<p style="text-align: center; color: #6b7280; font-style: italic;">Aucune vente de produit enregistrée</p>'}
+                    </div>
+                </div>
+                
+                <!-- Détail des Ventes -->
+                <div>
+                    <h2 style="font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
+                        🧾 Détail des Ventes du Jour (${ventes.length})
+                    </h2>
+                    ${ventes.length > 0 ? `
+                        <div style="display: grid; gap: 15px;">
+                            ${ventes.slice(0, 10).map((v, index) => {
+                                const client = clients.find(c => c.id == v.clientId);
+                                const payColor = v.typePaiement === 'cash' ? '#10b981' : '#3b82f6';
+                                const payIcon = v.typePaiement === 'cash' ? '💵' : '📱';
+                                
+                                return `
+                                    <div style="background: white; border: 2px solid #e5e7eb; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                                        <div style="flex: 1;">
+                                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                                                <span style="background: ${payColor}; color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700;">#${index + 1}</span>
+                                                <h3 style="margin: 0; font-size: 17px; font-weight: 800; color: #0f172a;">${v.article}</h3>
+                                            </div>
+                                            <div style="color: #6b7280; font-size: 13px; margin-bottom: 5px;">
+                                                Qté: ${v.quantite} × ${formatMontant(v.prixUnitaire)}
+                                                ${client ? `<span style="background: #3b82f6; color: white; padding: 2px 8px; border-radius: 10px; margin-left: 8px; font-size: 11px;">${client.nom}</span>` : ''}
+                                            </div>
+                                            <div style="color: #6b7280; font-size: 13px;">
+                                                ${payIcon} ${v.typePaiement === 'cash' ? 'Cash' : 'Mobile Money'} • 🕐 ${v.heure}
+                                            </div>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <p style="margin: 0; font-size: 24px; font-weight: 900; color: ${payColor};">${formatMontant(v.montantTotal)}</p>
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')}
+                            ${ventes.length > 10 ? `<p style="text-align: center; color: #6b7280; font-style: italic; margin-top: 10px;">... et ${ventes.length - 10} autre${ventes.length - 10 > 1 ? 's' : ''} vente${ventes.length - 10 > 1 ? 's' : ''}</p>` : ''}
+                        </div>
+                    ` : `
+                        <div style="background: #f9fafb; border-radius: 16px; padding: 60px; text-align: center;">
+                            <div style="font-size: 80px; margin-bottom: 20px;">🛒</div>
+                            <h3 style="color: #6b7280; font-weight: 700; margin: 0;">Aucune vente enregistrée aujourd'hui</h3>
+                        </div>
+                    `}
+                </div>
+                
+                <!-- Footer -->
+                <div style="margin-top: 50px; padding-top: 30px; border-top: 2px solid #e5e7eb; text-align: center; color: #6b7280; font-size: 13px;">
+                    <p style="margin: 0;">Généré le ${new Date().toLocaleString('fr-FR')} • MonCashJour Pro v2.0</p>
+                </div>
+            </div>
+        `;
+        
+        // Convertir en image avec html2canvas
+        const canvas = await html2canvas(reportContainer, {
+            scale: 2,
+            backgroundColor: '#ffffff',
+            logging: false,
+            useCORS: true
+        });
+        
+        // Télécharger l'image
+        const link = document.createElement('a');
+        link.download = `MonCashJour_Rapport_${new Date().toISOString().split('T')[0]}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+        
+        // Nettoyer
+        document.body.removeChild(reportContainer);
+        
+        showToast('🖼️ Rapport PNG généré avec succès!', 'success');
+        
+    } catch (error) {
+        console.error('Erreur lors de la génération du PNG:', error);
+        showToast('❌ Erreur lors de la génération du rapport', 'danger');
+    }
 }
 
 // ==================== UTILITIES ====================
