@@ -1,8 +1,10 @@
 <h1 align="center">Salut 👋, je suis M'BOLLO Aka Elvis</h1>
-<h3 align="center">Développeur Web Full-Stack passionné de Côte d'Ivoire 🇨🇮</h3>
+<h3 align="center">Développeur Web Full-Stack · Fondateur AKATech · Abidjan 🇨🇮</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=wthomasss06-stack&label=Visites%20du%20profil&color=10b981&style=flat" alt="wthomasss06-stack" />
+  <img src="https://img.shields.io/badge/Disponible-Oui-10b981?style=flat&logo=checkmarx&logoColor=white" alt="Disponible" />
+  <img src="https://img.shields.io/badge/Projets%20livrés-13+-FF5500?style=flat" alt="Projets" />
 </p>
 
 <p align="center">
@@ -15,167 +17,197 @@
 
 ## 🚀 À propos de moi
 
-Développeur web formé en **Réseau et Sécurité Informatique**, je conçois et mets en œuvre des applications web fonctionnelles en combinant front-end moderne et back-end Python. Rigoureux, créatif et orienté solution, je dispose d'une expérience terrain en maintenance informatique et support technique.
+Développeur web formé en **Réseau et Sécurité Informatique**, je conçois et déploie des applications web modernes en combinant front-end soigné et back-end Python robuste. Fondateur de **[AKATech](https://akatech.vercel.app/)**, mon agence digitale basée à Abidjan qui accompagne les entrepreneurs et PME ivoiriennes.
 
-- 🔭 Je travaille actuellement sur **MonMarket CI** - Marketplace E-commerce multi-vendeurs
-- 🌱 J'apprends constamment **React avancé, Django REST Framework**
-- 👨‍💻 Tous mes projets sont disponibles sur [mon portfolio](https://akafolio160502.vercel.app/)
-- 💬 Demandez-moi sur **Python, Flask, Django, React, MySQL, JavaScript**
-- 📫 Comment me contacter : **aka.mbollo@uvci.edu.ci**
+- 🏢 Fondateur de **[AKATech](https://akatech.vercel.app/)** — Agence Digitale · Abidjan
+- 🔭 Je travaille actuellement sur **TerraSafe Résidences** — marketplace foncière multi-rôles (Next.js + Django REST + MySQL)
+- 🌱 J'approfondis **Next.js 15, Django REST Framework, WebGL / Framer Motion**
+- 👨‍💻 Tous mes projets sur [mon portfolio](https://akafolio160502.vercel.app/)
+- 💬 Demandez-moi sur **Python, Flask, Django, React, Next.js, MySQL, JavaScript**
+- 📫 Contact : **wthomasss06@gmail.com** · **aka.mbollo@uvci.edu.ci**
 - 📍 Basé à **Abidjan, Côte d'Ivoire**
-- ⚡ Fun fact : **Je pense que le code est comme une toile, et je crée mon chef-d'œuvre avec**
+- ⚡ Fun fact : *« Le code est comme une toile — je crée mon chef-d'œuvre avec. »*
+
+---
+
+## 🏢 AKATech — Mon Agence
+
+> Site officiel de mon agence digitale, entièrement conçu par mes soins.
+
+**[→ akatech.vercel.app](https://akatech.vercel.app/)**
+
+- Design **Aurora WebGL** + animations **Framer Motion**
+- Stack : Next.js 15 · Tailwind CSS · Vercel
+- Services : sites vitrines, e-commerce, SaaS, portfolios
+- Paiement **Mobile Money** (MTN · Orange · Wave)
 
 ---
 
 ## 🎯 Expérience Professionnelle
 
-### 💼 Informaticien Stagiaire - Mairie d'Agboville
-**Mai - Novembre 2025**
-- Installation et maintenance du matériel et du réseau informatique
-- Assistance technique au personnel administratif
-- Contribution à la numérisation et à la gestion de bases de données internes
-- Soutien à la conception d'outils numériques internes
+### 💼 Informaticien Stagiaire — Mairie d'Agboville
+**Mai – Novembre 2025**
+- Installation, maintenance du parc informatique et du réseau
+- Support technique au personnel administratif
+- Numérisation et gestion de bases de données internes
+- Conception d'outils numériques internes
 
-### 🎓 Ingénieur en réseau et sécurité - Projet ARTICI
-**2023 - 2024**
-- Développement d'une plateforme web pour promouvoir l'artisanat local
-- Collaboration avec une équipe de 15 étudiants pluridisciplinaires
-- Optimisation des performances techniques
-- Intégration des meilleures pratiques en sécurité informatique
+### 💻 Développeur Freelance Full-Stack — AKATech
+**2024 – Aujourd'hui**
+- 13+ projets livrés : sites vitrines, e-commerces, SaaS, portfolios, applications mobiles
+- Clients en Côte d'Ivoire, Sénégal, Cameroun et France
+- Stack principale : Next.js · React · Flask · Django · MySQL
 
----
-
-## 🛠️ Langages et Technologies
-
-### Frontend Development
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="50" height="50"/>
-</p>
-
-### Backend Development
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="50" height="50"/>
-</p>
-
-### Outils et Plateformes
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" width="50" height="50"/>
-</p>
-
-### Design et IA
-<p align="left">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="ChatGPT" width="50" height="50"/>
-  <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Gemini" width="50" height="50"/>
-</p>
+### 🎓 Projet Académique – ARTICI
+**2023 – 2024 · UVCI**
+- Plateforme web de promotion de l'artisanat ivoirien local
+- Collaboration avec une équipe pluridisciplinaire de 15 étudiants
+- Optimisation des performances et sécurité applicative
 
 ---
 
-## 📊 Statistiques GitHub
+## 🛠️ Stack Technique
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=wthomasss06-stack&show_icons=true&locale=fr&layout=compact&theme=algolia" alt="wthomasss06-stack" />
+### Frontend
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="46" height="46"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=wthomasss06-stack&show_icons=true&locale=fr&theme=algolia" alt="wthomasss06-stack" />
+### Backend
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="NestJS" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="46" height="46"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=wthomasss06-stack&theme=algolia" alt="wthomasss06-stack" />
+### Outils & Déploiement
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="46" height="46"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" width="46" height="46"/>
+  <img src="https://www.pythonanywhere.com/static/anywhere/images/PA-logo.svg" alt="PythonAnywhere" width="46" height="46"/>
+</p>
+
+### IA & Assistants
+<p align="left">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="ChatGPT" width="46" height="46"/>
+  <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Gemini" width="46" height="46"/>
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/claude-ai-icon.svg" alt="Claude AI" width="46" height="46"/>
 </p>
 
 ---
 
 ## 🎨 Projets Phares
 
-### 🛒 MonMarket CI - Marketplace E-commerce
-**En production (60%)**
+### 🏢 AKATech — Site Officiel Agence ⭐ `NOUVEAU`
+**En production (100%)**
+- Site de mon agence avec Aurora WebGL, animations Framer Motion, design vert/noir premium
+- Stack : **Next.js 15, Tailwind CSS, Framer Motion, Vercel**
+- **[→ akatech.vercel.app](https://akatech.vercel.app/)**
+
+### 🛒 ShopCI — Marketplace E-commerce
+**En production (65%)**
 - Marketplace multi-vendeurs pour le e-commerce ivoirien
-- Technologies : React, Django, Bootstrap 5, MySQL
-- [Voir le site](https://ecommerce-aka.netlify.app/)
+- Stack : **React, Django, Bootstrap 5, MySQL**
+- **[→ shop-ci.vercel.app](https://shop-ci.vercel.app/)**
 
-### 🏡 TerraSafe - Plateforme Foncière
+### 🏡 TerraSafe — Plateforme Foncière
 **En production (85%)**
-- Marketplace foncière sécurisée contre les arnaques
-- Technologies : Flask, MySQL, JavaScript, Bootstrap 5
-- [Voir le site](https://wthomassss06.pythonanywhere.com)
+- Marketplace foncière sécurisée contre les arnaques immobilières
+- Stack : **Flask, MySQL, JavaScript, Bootstrap 5**
+- **[→ wthomassss06.pythonanywhere.com](https://wthomassss06.pythonanywhere.com)**
 
-### ⚡ TechFlow – Site Vitrine Professionnel
-
-En production (100%)
+### ⚡ TechFlow — Site Vitrine Professionnel
+**En production (97%)**
 - Site vitrine moderne pour la présentation de services technologiques
-- Technologies : Django, HTML/Tailwind CSS, JavaScript
-- [Voir le site](https://techflow-ten.vercel.app/)
+- Stack : **HTML, Tailwind CSS, JavaScript, Vercel**
+- **[→ techflow-ten.vercel.app](https://techflow-ten.vercel.app/)**
 
-### 🗺️ chap-chapMAP - Navigation Intelligente
-**Démo fonctionnelle**
-- Application de cartographie avec calcul d'itinéraires
-- Technologies : JavaScript, Leaflet.js, OSRM API
+### 🎵 ManoBeat 777 — Portfolio Beatmaker
+**En production (100%)**
+- Portfolio d'un beatmaker ivoirien : écoute en ligne + achat via WhatsApp
+- Stack : **React, Tailwind CSS, Howler.js, Vercel**
+- **[→ xxx-x.vercel.app](https://xxx-x.vercel.app/)**
 
-### 💰 MonCashJour - Gestion de Ventes
+### 🏘️ New Horizon Service — Location de Résidences
+**En production (100%)**
+- Plateforme de résidences meublées haut de gamme avec backend Flask REST
+- Stack : **Next.js, Flask, Python, MySQL, Vercel**
+- **[→ new-horizonservice.vercel.app](https://new-horizonservice.vercel.app/)**
+
+### 🎨 Tati — Portfolio & Vitrine Moderne
+**En production (100%)**
+- Portfolio client double fonction : vitrine + présentation personnelle
+- Stack : **React, Tailwind CSS, Framer Motion, Vercel**
+- **[→ tatii.vercel.app](https://tatii.vercel.app/)**
+
+### 🖌️ MK — Portfolio Graphiste Client
+**En production (100%)**
+- Portfolio sur-mesure pour un client graphiste, galerie immersive
+- Stack : **React, Tailwind CSS, Framer Motion, Vercel**
+- **[→ mory01ff.vercel.app](https://mory01ff.vercel.app/)**
+
+### 🗺️ Chap-chapMAP — Navigation Intelligente
 **Démo fonctionnelle**
-- Application pour petits commerçants avec analytiques
-- Technologies : HTML, JavaScript, Tailwind CSS, Chart.js
+- Cartographie intelligente avec GPS temps réel et calcul d'itinéraires optimisés
+- Stack : **JavaScript, Leaflet.js, OSRM API, Geolocation API**
+
+### 💰 MonCashJour — Gestion de Ventes
+**Démo fonctionnelle**
+- Application pour petits commerçants : analytiques + export CSV + historique
+- Stack : **HTML, JavaScript, Tailwind CSS, Chart.js**
+
+---
+
+## 📊 Statistiques GitHub
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=wthomasss06-stack&show_icons=true&locale=fr&layout=compact&theme=algolia" alt="Top langages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=wthomasss06-stack&show_icons=true&locale=fr&theme=algolia" alt="Stats GitHub" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=wthomasss06-stack&theme=algolia" alt="Streak" />
+</p>
 
 ---
 
 ## 🎓 Formation
 
-**Licence en Réseau et Sécurité Informatique**  
-*Université Virtuelle de Côte d'Ivoire (UVCI)* | 2023-2024
+**Licence en Réseau et Sécurité Informatique**
+*Université Virtuelle de Côte d'Ivoire (UVCI)* | 2023–2024
+- Certification **E-Banking** · Réf: CC/24-002485
 
-**Baccalauréat Série D**  
-*Lycée Moderne d'Arrah* | 2020-2021
-
-**Certifications**
-- E-Banking (Réf: CC/24-002485) | 2023-2024
+**Baccalauréat Série D — Mention Assez Bien**
+*Lycée Moderne d'Arrah* | 2020–2021
 
 ---
 
 ## 💪 Compétences Clés
 
-- **Développement Web Full-Stack** : Applications CRUD complètes, APIs REST
-- **Frontend** : Responsive design, React, Bootstrap, Tailwind CSS
-- **Backend** : Python (Flask/Django), Node.js, Architecture client/serveur
-- **Bases de Données** : MySQL, modélisation, optimisation SQL
-- **Sécurité** : Bonnes pratiques applicatives, gestion des accès
-- **Support Technique** : Maintenance informatique, assistance utilisateur
-
----
-
-## 🌐 Connectez-vous avec moi
-
-<p align="left">
-  <a href="https://github.com/wthomasss06-stack" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  <a href="https://www.linkedin.com/in/aka-m-bollo-60a1b1340" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="https://wa.me/2250142507750" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
-  </a>
-  <a href="mailto:aka.mbollo@uvci.edu.ci">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://wthomasss06-stack.github.io/wthomasss06-stack/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-10b981?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/>
-  </a>
-</p>
+| Domaine | Compétences |
+|---------|-------------|
+| **Full-Stack** | Applications CRUD complètes, SPA React/Next.js, APIs REST |
+| **Frontend** | Responsive design, animations CSS/Framer Motion, WebGL |
+| **Backend** | Python Flask/Django, Node.js, architecture client/serveur |
+| **Base de données** | MySQL, modélisation, requêtes optimisées |
+| **Sécurité** | Auth JWT, bonnes pratiques, gestion des accès |
+| **Mobile Money** | Intégration MTN · Orange · Wave (marché africain) |
+| **Support Technique** | Maintenance réseau, assistance utilisateur |
 
 ---
 
@@ -187,10 +219,41 @@ En production (100%)
 
 ---
 
+## 🌐 Me retrouver
+
+<p align="left">
+  <a href="https://github.com/wthomasss06-stack" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://www.linkedin.com/in/m-bollo-aka-60a1b1340/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://web.facebook.com/profile.php?id=61577494705852" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/>
+  </a>
+  <a href="https://wa.me/2250142507750" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
+  </a>
+  <a href="mailto:wthomasss06@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+  </a>
+  <a href="mailto:aka.mbollo@uvci.edu.ci">
+    <img src="https://img.shields.io/badge/Email%20UVCI-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email UVCI"/>
+  </a>
+  <a href="https://akatech.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/AKATech-10b981?style=for-the-badge&logo=vercel&logoColor=white" alt="AKATech"/>
+  </a>
+  <a href="https://akafolio160502.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-FF5500?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/>
+  </a>
+</p>
+
+---
+
 <p align="center">
-  <i>« Ce n'est pas important de réussir du premier coup. L'essentiel est de réussir au final. » - Kevin Ressegaire</i>
+  <i>« Ce n'est pas important de réussir du premier coup. L'essentiel est de réussir au final. » — Kevin Ressegaire</i>
 </p>
 
 <p align="center">
-  💚 Fait avec passion en Côte d'Ivoire
+  © 2026 Elvis M'BOLLO. Tous droits réservés.
 </p>
