@@ -43,6 +43,72 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 
 ---
 
+## 💼 Services AKATech
+
+> Toutes les prestations sont **développées et livrées directement par AKATech**. Pas de sous-traitance. Pas de templates. Du sur-mesure.
+
+### 🖥️ 01 · Sites Vitrine & Landing Pages
+Design professionnel, SEO intégré, optimisé pour convertir. Livraison en 7–14 jours.
+
+### 🛒 02 · E-Commerce & Boutiques en ligne
+Paiement Mobile Money (MTN · Orange · Wave), gestion de stock, tableau de bord admin. Boutique opérationnelle en 2 semaines.
+
+### ⚙️ 03 · Applications SaaS & Métier
+Automatisation des processus, multi-rôles, dashboard temps réel, API REST robuste.
+
+### 🔧 04 · Back-end & API
+Architecture solide, sécurisée et scalable — Django, NestJS, PostgreSQL. Prêt pour la production.
+
+### 🎨 05 · Portfolios & Identités créatives
+Vitrines animées et percutantes pour créatifs, graphistes et freelances qui veulent plus de clients.
+
+### 🛠️ 06 · Maintenance & Évolutions
+Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre investissement protégé sur la durée.
+
+---
+
+## 💰 Tarifs AKATech
+
+> En **FCFA** · Adapté au marché africain · **Devis gratuit et sans engagement** · Pas de frais cachés
+
+### 🖥️ Site Vitrine
+
+| Formule | Prix | Délai |
+|:---|:---:|:---:|
+| STARTER | 70 000 FCFA | 3 à 5 jours |
+| ⭐ STANDARD | 120 000 FCFA | 5 à 7 jours |
+| PREMIUM | 180 000 FCFA | 7 à 10 jours |
+
+### 🛒 E-Commerce
+
+| Formule | Prix | Délai |
+|:---|:---:|:---:|
+| STARTER | 150 000 FCFA | 5 jours |
+| ⭐ PRO | 270 000 FCFA | 7 à 10 jours |
+| ELITE | 450 000 FCFA | 10 à 14 jours |
+
+### 🏪 Boutique avancée / Marketplace
+
+| Formule | Prix | Délai |
+|:---|:---:|:---:|
+| STARTER | 400 000 FCFA | 14 jours |
+| ⭐ PRO | 650 000 FCFA | 21 jours |
+| ELITE | 1 000 000 FCFA | 30 jours |
+
+### ⚙️ Application SaaS / Métier
+
+| Formule | Prix | Délai |
+|:---|:---:|:---:|
+| MVP | 700 000 FCFA | 3 à 4 semaines |
+| ⭐ SCALE | 1 200 000 – 2 000 000 FCFA | 4 à 6 semaines |
+| ENTERPRISE | À partir de 2 500 000 FCFA | 6 à 10 semaines |
+
+> ⭐ = Formule recommandée &nbsp;·&nbsp; 🎁 Hébergement **offert 1 an** sur les formules PRO & ELITE &nbsp;·&nbsp; 📚 **Formation incluse** dans toutes les formules
+
+📲 **[Obtenir un devis gratuit sur WhatsApp →](https://wa.me/2250142507750?text=Bonjour+AKATech,+je+veux+un+devis+gratuit+!)**
+
+---
+
 ## 🎯 Expérience Professionnelle
 
 ### 💼 Informaticien Stagiaire — Mairie d'Agboville
@@ -255,5 +321,5 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 </p>
 
 <p align="center">
-  © 2026 Elvis M'BOLLO. Tous droits réservés.
+  © 2026 Elvis M'BOLLO · AKATech. Tous droits réservés.
 </p>
