@@ -20,7 +20,7 @@
 Développeur web formé en **Réseau et Sécurité Informatique**, je conçois et déploie des applications web modernes en combinant front-end soigné et back-end Python robuste. Fondateur de **[AKATech](https://akatech.vercel.app/)**, mon agence digitale basée à Abidjan qui accompagne les entrepreneurs et PME ivoiriennes.
 
 - 🏢 Fondateur de **[AKATech](https://akatech.vercel.app/)** — Agence Digitale · Abidjan
-- 🔭 Je travaille actuellement sur **TerraSafe Résidences** — marketplace foncière multi-rôles (Next.js + Django REST + MySQL)
+- 🔭 Je travaille actuellement sur **NEXURA** — marketplace foncière multi-rôles (Next.js + Django REST + MySQL)
 - 🌱 J'approfondis **Next.js 15, Django REST Framework, WebGL / Framer Motion**
 - 👨‍💻 Tous mes projets sur [mon portfolio](https://akafolio160502.vercel.app/)
 - 💬 Demandez-moi sur **Python, Flask, Django, React, Next.js, MySQL, JavaScript**
