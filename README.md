@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=wthomasss06-stack&label=Visites%20du%20profil&color=10b981&style=flat" alt="wthomasss06-stack" />
   <img src="https://img.shields.io/badge/Disponible-Oui-10b981?style=flat&logo=checkmarx&logoColor=white" alt="Disponible" />
-  <img src="https://img.shields.io/badge/Projets%20livrés-13+-FF5500?style=flat" alt="Projets" />
+  <img src="https://img.shields.io/badge/Projets%20livrés-15+-FF5500?style=flat" alt="Projets" />
 </p>
 
 <p align="center">
@@ -20,9 +20,9 @@
 Développeur web formé en **Réseau et Sécurité Informatique**, je conçois et déploie des applications web modernes en combinant front-end soigné et back-end Python robuste. Fondateur de **[AKATech](https://akatech.vercel.app/)**, mon agence digitale basée à Abidjan qui accompagne les entrepreneurs et PME ivoiriennes.
 
 - 🏢 Fondateur de **[AKATech](https://akatech.vercel.app/)** — Agence Digitale · Abidjan
-- 🔭 Je travaille actuellement sur **NEXURA** — marketplace foncière multi-rôles (Next.js + Django REST + MySQL)
-- 🌱 J'approfondis **Next.js 15, Django REST Framework, WebGL / Framer Motion**
-- 👨‍💻 Tous mes projets sur [mon portfolio](https://akafolio160502.vercel.app/)
+- 🔭 Je travaille actuellement sur **KokoEat** — application de livraison alimentaire pensée pour le marché ivoirien (React + Django REST + PostgreSQL)
+- 🌱 J'approfondis **le WebGL/Three.js, GSAP (ScrollTrigger) et Next.js 15**
+- 👨‍💻 Tous mes projets sur [mon portfolio](https://mbolloaka-dev.vercel.app/)
 - 💬 Demandez-moi sur **Python, Flask, Django, React, Next.js, MySQL, JavaScript**
 - 📫 Contact : **wthomasss06@gmail.com** · **aka.mbollo@uvci.edu.ci**
 - 📍 Basé à **Abidjan, Côte d'Ivoire**
@@ -32,12 +32,13 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 
 ## 🏢 AKATech — Mon Agence
 
-> Site officiel de mon agence digitale, entièrement conçu par mes soins.
+> Site officiel de mon agence digitale, entièrement conçu par mes soins — accueil, réalisations, tarifs, blog et contact.
 
 **[→ akatech.vercel.app](https://akatech.vercel.app/)**
 
 - Design **Aurora WebGL** + animations **Framer Motion**
 - Stack : Next.js 15 · Tailwind CSS · Vercel
+- Pages dédiées : Réalisations · Tarifs (devis en ligne) · Blog · Services · À propos
 - Services : sites vitrines, e-commerce, SaaS, portfolios
 - Paiement **Mobile Money** (MTN · Orange · Wave)
 
@@ -75,35 +76,15 @@ Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre inve
 
 | Formule | Prix | Délai |
 |:---|:---:|:---:|
-| STARTER | 70 000 FCFA | 3 à 5 jours |
-| ⭐ STANDARD | 120 000 FCFA | 5 à 7 jours |
-| PREMIUM | 180 000 FCFA | 7 à 10 jours |
-
-### 🛒 E-Commerce
-
-| Formule | Prix | Délai |
-|:---|:---:|:---:|
 | STARTER | 150 000 FCFA | 5 jours |
-| ⭐ PRO | 270 000 FCFA | 7 à 10 jours |
-| ELITE | 450 000 FCFA | 10 à 14 jours |
+| ⭐ PRO | 250 000 FCFA | 7 jours |
+| ELITE | 400 000 FCFA | 10 jours |
 
-### 🏪 Boutique avancée / Marketplace
+E-commerce, applications SaaS et portfolios ont chacun leur propre grille — le détail complet et toujours à jour est sur la page tarifs du site (plutôt que de le dupliquer ici et risquer un décalage).
 
-| Formule | Prix | Délai |
-|:---|:---:|:---:|
-| STARTER | 400 000 FCFA | 14 jours |
-| ⭐ PRO | 650 000 FCFA | 21 jours |
-| ELITE | 1 000 000 FCFA | 30 jours |
+**[→ Voir la grille complète : E-commerce · SaaS · Portfolio](https://akatech.vercel.app/pricing/)**
 
-### ⚙️ Application SaaS / Métier
-
-| Formule | Prix | Délai |
-|:---|:---:|:---:|
-| MVP | 700 000 FCFA | 3 à 4 semaines |
-| ⭐ SCALE | 1 200 000 – 2 000 000 FCFA | 4 à 6 semaines |
-| ENTERPRISE | À partir de 2 500 000 FCFA | 6 à 10 semaines |
-
-> ⭐ = Formule recommandée &nbsp;·&nbsp; 🎁 Hébergement **offert 1 an** sur les formules PRO & ELITE &nbsp;·&nbsp; 📚 **Formation incluse** dans toutes les formules
+> ⭐ = Formule recommandée &nbsp;·&nbsp; 🎁 Hébergement **offert 1 an** sur PRO & ELITE &nbsp;·&nbsp; 📚 **Formation incluse** dans toutes les formules
 
 📲 **[Obtenir un devis gratuit sur WhatsApp →](https://wa.me/2250142507750?text=Bonjour+AKATech,+je+veux+un+devis+gratuit+!)**
 
@@ -120,7 +101,7 @@ Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre inve
 
 ### 💻 Développeur Freelance Full-Stack — AKATech
 **2024 – Aujourd'hui**
-- 13+ projets livrés : sites vitrines, e-commerces, SaaS, portfolios, applications mobiles
+- 15+ projets livrés : sites vitrines, e-commerces, SaaS, portfolios, applications mobiles
 - Clients en Côte d'Ivoire, Sénégal, Cameroun et France
 - Stack principale : Next.js · React · Flask · Django · MySQL
 
@@ -156,6 +137,9 @@ Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre inve
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="46" height="46"/>
 </p>
 
+### Animation & WebGL
+> **GSAP** (ScrollTrigger, timelines) · **Three.js** / React Three Fiber · **Framer Motion** · **OGL** — transitions de page, scroll storytelling et scènes 3D custom sur la plupart de mes projets récents (AKATech, akaFOLIO, portfolios clients).
+
 ### Outils & Déploiement
 <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="46" height="46"/>
@@ -178,9 +162,33 @@ Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre inve
 
 ### 🏢 AKATech — Site Officiel Agence ⭐ `NOUVEAU`
 **En production (100%)**
-- Site de mon agence avec Aurora WebGL, animations Framer Motion, design vert/noir premium
+- Site multi-pages de mon agence : accueil Aurora WebGL, réalisations, tarifs (devis en ligne), blog
 - Stack : **Next.js 15, Tailwind CSS, Framer Motion, Vercel**
 - **[→ akatech.vercel.app](https://akatech.vercel.app/)**
+
+### 🌐 NEXURA — Marketplace Nouvelle Génération ⭐ `NOUVEAU`
+**En production**
+- Évolution de TerraSafe : résidences meublées, motos & véhicules, bureaux & salles de conférence, terrains — un seul marketplace multi-catégories, auth sécurisée, KYC intégré, notifications temps réel
+- Stack : **Next.js 14, Django REST, PostgreSQL, WebSockets, Redis & Celery**
+- **[→ nexura-one.vercel.app](https://nexura-one.vercel.app/)**
+
+### 🎭 Jean Edy — Portfolio React Multilingue `NOUVEAU`
+**En production (100%)**
+- Portfolio client avancé : FR/EN/RU, typographie sur-mesure, transitions gooey, animations GSAP soignées
+- Stack : **React 18, Vite, GSAP, Framer Motion, Tailwind CSS**
+- **[→ jean-edy-dev.vercel.app](https://jean-edy-dev.vercel.app/)**
+
+### 🧺 MD Laverie Pressing — Vitrine Pressing Abidjan `NOUVEAU`
+**En production (100%)**
+- Site vitrine complet : hero slider GSAP, grille de tarifs, formulaire de contact EmailJS
+- Stack : **React 18, Vite, GSAP, React Router, EmailJS**
+- **[→ laverie-plus.vercel.app](https://laverie-plus.vercel.app/)**
+
+### 🎓 Université les Anges — Site Institutionnel `NOUVEAU`
+**En production (100%)**
+- Site institutionnel moderne pour un établissement d'enseignement supérieur
+- Stack : **HTML, CSS, Bulma, Bootstrap, Vercel**
+- **[→ universitelesanges.vercel.app](https://universitelesanges.vercel.app/)**
 
 ### 🛒 ShopCI — Marketplace E-commerce
 **En production (65%)**
@@ -224,16 +232,6 @@ Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre inve
 - Stack : **React, Tailwind CSS, Framer Motion, Vercel**
 - **[→ mory01ff.vercel.app](https://mory01ff.vercel.app/)**
 
-### 🗺️ Chap-chapMAP — Navigation Intelligente
-**Démo fonctionnelle**
-- Cartographie intelligente avec GPS temps réel et calcul d'itinéraires optimisés
-- Stack : **JavaScript, Leaflet.js, OSRM API, Geolocation API**
-
-### 💰 MonCashJour — Gestion de Ventes
-**Démo fonctionnelle**
-- Application pour petits commerçants : analytiques + export CSV + historique
-- Stack : **HTML, JavaScript, Tailwind CSS, Chart.js**
-
 ---
 
 ## 📊 Statistiques GitHub
@@ -269,8 +267,9 @@ Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre inve
 |---------|-------------|
 | **Full-Stack** | Applications CRUD complètes, SPA React/Next.js, APIs REST |
 | **Frontend** | Responsive design, animations CSS/Framer Motion, WebGL |
+| **Animation & 3D** | GSAP (ScrollTrigger, timelines), Three.js / React Three Fiber, transitions cinématiques |
 | **Backend** | Python Flask/Django, Node.js, architecture client/serveur |
-| **Base de données** | MySQL, modélisation, requêtes optimisées |
+| **Base de données** | MySQL, PostgreSQL, modélisation, requêtes optimisées |
 | **Sécurité** | Auth JWT, bonnes pratiques, gestion des accès |
 | **Mobile Money** | Intégration MTN · Orange · Wave (marché africain) |
 | **Support Technique** | Maintenance réseau, assistance utilisateur |
@@ -309,7 +308,7 @@ Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre inve
   <a href="https://akatech.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/AKATech-10b981?style=for-the-badge&logo=vercel&logoColor=white" alt="AKATech"/>
   </a>
-  <a href="https://akafolio160502.vercel.app/" target="_blank">
+  <a href="https://mbolloaka-dev.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-FF5500?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/>
   </a>
 </p>
