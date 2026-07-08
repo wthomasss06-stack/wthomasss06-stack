@@ -54,16 +54,15 @@ Design professionnel, SEO intégré, optimisé pour convertir. Livraison en 7–
 ### 🛒 02 · E-Commerce & Boutiques en ligne
 Paiement Mobile Money (MTN · Orange · Wave), gestion de stock, tableau de bord admin. Boutique opérationnelle en 2 semaines.
 
-### ⚙️ 03 · Applications SaaS & Métier
-Automatisation des processus, multi-rôles, dashboard temps réel, API REST robuste.
 
-### 🔧 04 · Back-end & API
+
+### 🔧 03 · Back-end & API
 Architecture solide, sécurisée et scalable — Django, NestJS, PostgreSQL. Prêt pour la production.
 
-### 🎨 05 · Portfolios & Identités créatives
+### 🎨 04 · Portfolios & Identités créatives
 Vitrines animées et percutantes pour créatifs, graphistes et freelances qui veulent plus de clients.
 
-### 🛠️ 06 · Maintenance & Évolutions
+### 🛠️ 05 · Maintenance & Évolutions
 Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre investissement protégé sur la durée.
 
 ---
