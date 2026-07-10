@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=wthomasss06-stack&label=Visites%20du%20profil&color=10b981&style=flat" alt="wthomasss06-stack" />
   <img src="https://img.shields.io/badge/Disponible-Oui-10b981?style=flat&logo=checkmarx&logoColor=white" alt="Disponible" />
-  <img src="https://img.shields.io/badge/Projets%20livrés-15+-FF5500?style=flat" alt="Projets" />
+  <img src="https://img.shields.io/badge/Projets%20livrés-19+-FF5500?style=flat" alt="Projets" />
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 - 🏢 Fondateur de **[AKATech](https://akatech.vercel.app/)** — Agence Digitale · Abidjan
 - 🔭 Je travaille actuellement sur **KokoEat** — application de livraison alimentaire pensée pour le marché ivoirien (React + Django REST + PostgreSQL)
 - 🌱 J'approfondis **le WebGL/Three.js, GSAP (ScrollTrigger) et Next.js 15**
-- 👨‍💻 Tous mes projets sur [mon portfolio](https://mbolloaka-dev.vercel.app/)
+- 👨‍💻 Tous mes projets sur [mon portfolio AKAFOLIO](https://mbolloaka-dev.vercel.app/)
 - 💬 Demandez-moi sur **Python, Flask, Django, React, Next.js, MySQL, JavaScript**
 - 📫 Contact : **wthomasss06@gmail.com** · **aka.mbollo@uvci.edu.ci**
 - 📍 Basé à **Abidjan, Côte d'Ivoire**
@@ -36,9 +36,10 @@ Développeur web formé en **Réseau et Sécurité Informatique**, je conçois e
 
 **[→ akatech.vercel.app](https://akatech.vercel.app/)**
 
-- Design **Aurora WebGL** + animations **Framer Motion**
-- Stack : Next.js 15 · Tailwind CSS · Vercel
-- Pages dédiées : Réalisations · Tarifs (devis en ligne) · Blog · Services · À propos
+- Design **Aurora WebGL** + animations **GSAP** & **Framer Motion**
+- Mode **Explorer** : tunnel 3D **Three.js** à travers toutes mes réalisations
+- Stack : Next.js 14 · GSAP · Three.js · Vercel
+- Pages dédiées : Réalisations · Explorer (3D) · Tarifs (devis en ligne) · Blog · Services · À propos
 - Services : sites vitrines, e-commerce, SaaS, portfolios
 - Paiement **Mobile Money** (MTN · Orange · Wave)
 
@@ -71,17 +72,11 @@ Mises à jour, nouvelles fonctionnalités, support réactif sous 48h. Votre inve
 
 > En **FCFA** · Adapté au marché africain · **Devis gratuit et sans engagement** · Pas de frais cachés
 
-### 🖥️ Site Vitrine
+Formules dès **100 000 FCFA** (Portfolio) jusqu'à **1 200 000 FCFA** (E-commerce Elite) · App Web/SaaS sur devis.
 
-| Formule | Prix | Délai |
-|:---|:---:|:---:|
-| STARTER | 150 000 FCFA | 5 jours |
-| ⭐ PRO | 250 000 FCFA | 7 jours |
-| ELITE | 400 000 FCFA | 10 jours |
+Prix exacts et grilles complètes (Portfolio · Vitrine · E-commerce · SaaS · Fiche Google) gardés uniquement sur la page tarifs du site pour éviter tout décalage entre les deux README.
 
-E-commerce, applications SaaS et portfolios ont chacun leur propre grille — le détail complet et toujours à jour est sur la page tarifs du site (plutôt que de le dupliquer ici et risquer un décalage).
-
-**[→ Voir la grille complète : E-commerce · SaaS · Portfolio](https://akatech.vercel.app/pricing/)**
+**[→ Voir toutes les grilles tarifaires](https://akatech.vercel.app/pricing/)**
 
 > ⭐ = Formule recommandée &nbsp;·&nbsp; 🎁 Hébergement **offert 1 an** sur PRO & ELITE &nbsp;·&nbsp; 📚 **Formation incluse** dans toutes les formules
 
@@ -100,7 +95,7 @@ E-commerce, applications SaaS et portfolios ont chacun leur propre grille — le
 
 ### 💻 Développeur Freelance Full-Stack — AKATech
 **2024 – Aujourd'hui**
-- 15+ projets livrés : sites vitrines, e-commerces, SaaS, portfolios, applications mobiles
+- 19+ projets livrés : sites vitrines, e-commerces, SaaS, portfolios, applications mobiles
 - Clients en Côte d'Ivoire, Sénégal, Cameroun et France
 - Stack principale : Next.js · React · Flask · Django · MySQL
 
@@ -159,10 +154,16 @@ E-commerce, applications SaaS et portfolios ont chacun leur propre grille — le
 
 ## 🎨 Projets Phares
 
+### 🐇 Chez Florence — Vente & Réservation de Lapins ⭐ `NOUVEAU`
+**En production (100%)**
+- Plateforme complète pour un élevage ivoirien : fiches par race, stock en temps réel, réservation en ligne avec WhatsApp pré-rempli
+- Stack : **Next.js 14, Express.js, Prisma, PostgreSQL (Neon), Cloudinary**
+- **[→ lapinou.vercel.app](https://lapinou.vercel.app/)**
+
 ### 🏢 AKATech — Site Officiel Agence ⭐ `NOUVEAU`
 **En production (100%)**
-- Site multi-pages de mon agence : accueil Aurora WebGL, réalisations, tarifs (devis en ligne), blog
-- Stack : **Next.js 15, Tailwind CSS, Framer Motion, Vercel**
+- Site multi-pages de mon agence : accueil Aurora WebGL, réalisations, tarifs (devis en ligne), blog, mode Explorer (tunnel 3D)
+- Stack : **Next.js 14, GSAP, Three.js, Framer Motion, Vercel**
 - **[→ akatech.vercel.app](https://akatech.vercel.app/)**
 
 ### 🌐 NEXURA — Marketplace Nouvelle Génération ⭐ `NOUVEAU`
