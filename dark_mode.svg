@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="900px" height="531px" font-size="13.5px">
+<style>
+@font-face {
+src: local('Consolas'), local('Consolas Bold');
+font-family: 'ConsolasFallback';
+font-display: swap;
+}
+text, tspan {white-space: pre;}
+</style>
+<rect width="900px" height="531px" fill="#0d1117" rx="12" />
+<text x="450.0" y="34" text-anchor="middle" fill="#FF5500" xml:space="preserve"> █████╗ ██╗  ██╗ █████╗ </text>
+<text x="450.0" y="51" text-anchor="middle" fill="#FF5500" xml:space="preserve">██╔══██╗██║ ██╔╝██╔══██╗</text>
+<text x="450.0" y="68" text-anchor="middle" fill="#FF5500" xml:space="preserve">███████║█████╔╝ ███████║</text>
+<text x="450.0" y="85" text-anchor="middle" fill="#FF5500" xml:space="preserve">██╔══██║██╔═██╗ ██╔══██║</text>
+<text x="450.0" y="102" text-anchor="middle" fill="#FF5500" xml:space="preserve">██║  ██║██║  ██╗██║  ██║</text>
+<text x="450.0" y="119" text-anchor="middle" fill="#FF5500" xml:space="preserve">╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝</text>
+<text x="40" y="167" fill="#c9d1d9"><tspan font-weight="bold">wthomasss06-stack</tspan> <tspan fill="#6e7681">--------------------------------------------------------------------------</tspan></text>
+<text x="40" y="195" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">Rôle</tspan>:<tspan class="cc" fill="#6e7681"> .................. </tspan><tspan class="value" fill="#a5d6ff">Développeur Full-Stack &amp; Fondateur AKATech</tspan></text>
+<text x="40" y="215" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">Localisation</tspan>:<tspan class="cc" fill="#6e7681"> .................. </tspan><tspan class="value" fill="#a5d6ff">Abidjan, Côte d'Ivoire</tspan></text>
+<text x="40" y="235" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">GitHub</tspan>:<tspan class="cc" fill="#6e7681" id="age_data_dots"> .................. </tspan><tspan class="value" fill="#a5d6ff" id="age_data">0 years, 7 months, 17 days</tspan></text>
+<text x="40" y="255" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">Stack</tspan>:<tspan class="cc" fill="#6e7681"> .................. </tspan><tspan class="value" fill="#a5d6ff">React · Next.js · Django · Flask · GSAP · Three.js</tspan></text>
+<text x="40" y="285" fill="#c9d1d9"><tspan font-weight="bold">Contact</tspan> <tspan fill="#6e7681">--------------------------------------------------------------------------</tspan></text>
+<text x="40" y="313" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">Email</tspan>:<tspan class="cc" fill="#6e7681"> .................. </tspan><tspan class="value" fill="#a5d6ff">wthomasss06@gmail.com</tspan></text>
+<text x="40" y="333" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">WhatsApp</tspan>:<tspan class="cc" fill="#6e7681"> .................. </tspan><tspan class="value" fill="#a5d6ff">+225 01 42 50 77 50</tspan></text>
+<text x="40" y="353" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">LinkedIn</tspan>:<tspan class="cc" fill="#6e7681"> .................. </tspan><tspan class="value" fill="#a5d6ff">m-bollo-aka</tspan></text>
+<text x="40" y="373" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">Portfolio</tspan>:<tspan class="cc" fill="#6e7681"> .................. </tspan><tspan class="value" fill="#a5d6ff">akafolio160502.vercel.app</tspan></text>
+<text x="40" y="393" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">Agence</tspan>:<tspan class="cc" fill="#6e7681"> .................. </tspan><tspan class="value" fill="#a5d6ff">akatech.vercel.app</tspan></text>
+<text x="40" y="423" fill="#c9d1d9"><tspan font-weight="bold">GitHub Stats</tspan> <tspan fill="#6e7681">--------------------------------------------------------------------------</tspan></text>
+<text x="40" y="451" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">Dépôts</tspan>:<tspan fill="#6e7681" id="repo_data_dots"> ..... </tspan><tspan fill="#a5d6ff" id="repo_data">17</tspan><tspan fill="#6e7681"> {Contribués: </tspan><tspan fill="#a5d6ff" id="contrib_data">17</tspan><tspan fill="#6e7681">} | </tspan><tspan class="key" fill="#FF5500">Étoiles</tspan>:<tspan fill="#6e7681" id="star_data_dots"> ... </tspan><tspan fill="#a5d6ff" id="star_data">0</tspan></text>
+<text x="40" y="471" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">Commits</tspan>:<tspan fill="#6e7681" id="commit_data_dots"> ... </tspan><tspan fill="#a5d6ff" id="commit_data">—</tspan><tspan fill="#6e7681"> | </tspan><tspan class="key" fill="#FF5500">Abonnés</tspan>:<tspan fill="#6e7681" id="follower_data_dots"> ... </tspan><tspan fill="#a5d6ff" id="follower_data">1</tspan></text>
+<text x="40" y="491" fill="#c9d1d9"><tspan fill="#6e7681">. </tspan><tspan class="key" fill="#FF5500">Lignes de code</tspan>:<tspan fill="#6e7681" id="loc_data_dots">. </tspan><tspan fill="#a5d6ff" id="loc_data">—</tspan><tspan fill="#6e7681"> ( </tspan><tspan fill="#3fb950" id="loc_add">—</tspan><tspan fill="#3fb950">++</tspan><tspan fill="#6e7681">, </tspan><tspan id="loc_del_dots" fill="#6e7681"></tspan><tspan fill="#f85149" id="loc_del">—</tspan><tspan fill="#f85149">--</tspan><tspan fill="#6e7681"> )</tspan></text>
+</svg>
