@@ -9,3 +9,8 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=wthomasss06-stack&show_icons=true&theme=github_dark&hide_border=true&count_private=false">
   <img alt="Stats GitHub" src="https://github-readme-stats.vercel.app/api?username=wthomasss06-stack&show_icons=true&theme=default&hide_border=true&count_private=false">
 </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=wthomasss06-stack&theme=react-dark&hide_border=true&area=true">
+  <img alt="Courbe de contribution GitHub" src="https://github-readme-activity-graph.vercel.app/graph?username=wthomasss06-stack&theme=minimal&hide_border=true&area=true">
+</picture>
